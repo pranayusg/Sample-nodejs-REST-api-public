@@ -5,7 +5,7 @@ const jwt = require('jsonwebtoken');
 const moment = require('moment')
 var nodemailer = require('nodemailer');
 
-const datastore = require('../database/datastore')
+const datastore = require('../model/datastore')
 const bcrypt = require('bcrypt');
 
 var saltRounds = 10;
@@ -14,7 +14,7 @@ var config = readConfig();
 const checkAuth = require('../middleware/checkAuth')
 
 function readConfig() {
-    return JSON.parse(fs.readFileSync('api/database/config.json'));
+    return JSON.parse(fs.readFileSync('api/model/config.json'));
 }
 
 router.post('/signup', (req, res) => {

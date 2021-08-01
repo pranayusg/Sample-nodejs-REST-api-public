@@ -1,0 +1,43 @@
+{"message":"Server started and running on port : 3000","level":"info","service":"sample nodejs rest api","timestamp":"2021-08-01T07:57:56.575Z"}
+{"message":"Please visit https://sample-nodejs-rest-api.herokuapp.com/api-docs/ for API documentation","level":"error","service":"sample nodejs rest api","timestamp":"2021-08-01T07:58:16.506Z"}
+{"message":"Server started and running on port : 3000","level":"info","service":"sample nodejs rest api","timestamp":"2021-08-01T07:59:50.685Z"}
+{"message":"Server started and running on port : 3000","level":"info","service":"sample nodejs rest api","timestamp":"2021-08-01T08:02:05.437Z"}
+{"message":"Please visit https://sample-nodejs-rest-api.herokuapp.com/api-docs/ for API documentation /demorests - GET - ::1","level":"error","service":"sample nodejs rest api","timestamp":"2021-08-01T08:02:08.309Z"}
+{"message":"Server started and running on port : 3000","level":"info","service":"sample nodejs rest api","timestamp":"2021-08-01T08:07:23.746Z"}
+{"message":"Server started and running on port : 3000","level":"info","service":"sample nodejs rest api","timestamp":"2021-08-01T08:28:07.381Z"}
+{"message":"Server started and running on port : 3000","level":"info","service":"sample nodejs rest api","timestamp":"2021-08-01T08:29:46.210Z"}
+{"message":"Server started and running on port : 3000","level":"info","service":"sample nodejs rest api","timestamp":"2021-08-01T09:27:51.926Z"}
+{"message":"Error message: Please visit https://sample-nodejs-rest-api.herokuapp.com/api-docs/ for API documentation,Error message: / - GET - ::1","level":"error","service":"sample nodejs rest api","timestamp":"2021-08-01T09:28:43.461Z"}
+{"message":"Error message: Please visit https://sample-nodejs-rest-api.herokuapp.com/api-docs/ for API documentation,Error message: /favicon.ico - GET - ::1","level":"error","service":"sample nodejs rest api","timestamp":"2021-08-01T09:28:43.519Z"}
+{"message":"Server started and running on port : 3000","level":"info","service":"sample nodejs rest api","timestamp":"2021-08-01T09:43:49.900Z"}
+{"message":"Server started and running on port : 3000","level":"info","service":"sample nodejs rest api","timestamp":"2021-08-01T09:52:45.960Z"}
+{"message":"Server started and running on port : 3000","level":"info","service":"sample nodejs rest api","timestamp":"2021-08-01T10:05:09.751Z"}
+{"message":"Server started and running on port : 3000","level":"info","service":"sample nodejs rest api","timestamp":"2021-08-01T10:05:30.951Z"}
+{"message":"CheckAuth= /users/decodetoken - GET - ::1 - /decodetoken","level":"info","service":"sample nodejs rest api","timestamp":"2021-08-01T10:06:53.242Z"}
+{"message":"Server started and running on port : 3000","level":"info","service":"sample nodejs rest api","timestamp":"2021-08-01T12:12:18.905Z"}
+{"message":"Error message: Please visit https://sample-nodejs-rest-api.herokuapp.com/api-docs/ for API documentation,Error message: / - GET - ::1","level":"error","service":"sample nodejs rest api","timestamp":"2021-08-01T12:13:00.458Z"}
+{"message":"Error message: Please visit https://sample-nodejs-rest-api.herokuapp.com/api-docs/ for API documentation,Error message: /favicon.ico - GET - ::1","level":"error","service":"sample nodejs rest api","timestamp":"2021-08-01T12:13:00.502Z"}
+{"message":"CheckAuth= /users/decodetoken - GET - ::1 - /decodetoken","level":"info","service":"sample nodejs rest api","timestamp":"2021-08-01T12:14:12.370Z"}
+{"message":"Server started and running on port : 3000","level":"info","service":"sample nodejs rest api","timestamp":"2021-08-01T12:18:57.596Z"}
+{"message":"CheckAuth= /users/decodetoken - GET - ::1","level":"info","service":"sample nodejs rest api","timestamp":"2021-08-01T12:19:10.380Z"}
+{"message":"CheckAuth= Auth failed /users/decodetoken - GET - ::1 - /decodetoken","level":"error","service":"sample nodejs rest api","timestamp":"2021-08-01T12:19:10.381Z"}
+{"message":"Server started and running on port : 3000","level":"info","service":"sample nodejs rest api","timestamp":"2021-08-01T12:19:27.044Z"}
+{"message":"Server started and running on port : 3000","level":"info","service":"sample nodejs rest api","timestamp":"2021-08-01T12:19:54.674Z"}
+{"message":"CheckAuth= /users/decodetoken - GET - ::1","level":"info","service":"sample nodejs rest api","timestamp":"2021-08-01T12:20:00.512Z"}
+{"message":"Server started and running on port : 3000","level":"info","service":"sample nodejs rest api","timestamp":"2021-08-01T12:20:53.471Z"}
+{"message":"Server started and running on port : 3000","level":"info","service":"sample nodejs rest api","timestamp":"2021-08-01T12:21:24.917Z"}
+{"message":"Auth failed /users/decodetoken - GET - ::1 - /decodetoken","level":"error","service":"sample nodejs rest api","timestamp":"2021-08-01T12:21:27.514Z"}
+{"message":"CheckAuth= /users/decodetoken - GET - ::1","level":"info","service":"sample nodejs rest api","timestamp":"2021-08-01T12:22:10.051Z"}
+{"message":"Server started and running on port : 3000","level":"info","service":"sample nodejs rest api","timestamp":"2021-08-01T12:22:40.665Z"}
+{"message":"Auth Success /users/decodetoken - GET - ::1","level":"info","service":"sample nodejs rest api","timestamp":"2021-08-01T12:22:45.955Z"}
+{"message":"Server started and running on port : 3000","level":"info","service":"sample nodejs rest api","timestamp":"2021-08-01T12:23:23.085Z"}
+{"message":"Server started and running on port : 3000","level":"info","service":"sample nodejs rest api","timestamp":"2021-08-01T12:35:20.876Z"}
+{"message":"Server started and running on port : 3000","level":"info","service":"sample nodejs rest api","timestamp":"2021-08-01T12:41:55.963Z"}
+{"message":"Server started and running on port : 3000","level":"info","service":"sample nodejs rest api","timestamp":"2021-08-01T12:42:58.731Z"}
+{"message":"Server started and running on port : 3000","level":"info","service":"sample nodejs rest api","timestamp":"2021-08-01T12:43:43.817Z"}
+{"message":"Server started and running on port : 3000","level":"info","service":"sample nodejs rest api","timestamp":"2021-08-01T12:43:48.560Z"}
+{"message":"Server started and running on port : 3000","level":"info","service":"sample nodejs rest api","timestamp":"2021-08-01T12:44:13.394Z"}
+{"message":"Server started and running on port : 3000","level":"info","service":"sample nodejs rest api","timestamp":"2021-08-01T12:45:37.282Z"}
+{"message":"Connection has been established successfully.","level":"info","service":"sample nodejs rest api","timestamp":"2021-08-01T12:45:39.465Z"}
+{"message":"Auth Success /users/decodetoken - GET - ::1","level":"info","service":"sample nodejs rest api","timestamp":"2021-08-01T12:47:39.369Z"}
+{"message":"Auth failed /users/decodetoken - GET - ::1 - /decodetoken","level":"error","service":"sample nodejs rest api","timestamp":"2021-08-01T12:47:48.454Z"}

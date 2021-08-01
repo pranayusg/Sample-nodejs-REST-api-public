@@ -3,34 +3,9 @@
 @Description: All database interactions are done in this file
 *****************************************************************************************************************/
 var Sequelize = require('sequelize');
-var fs = require('fs');
+const sequelize=require('./connection')
 
-var config = readConfig();
 var methods = {};
-
-function readConfig() 
-{
-    return JSON.parse(fs.readFileSync('api/database/config.json'));
-}
-
-sequelize = new Sequelize(config.database, config.username, config.password, {
-    host: config.host,
-    dialect: config.dialect,
-    port:config.port,
-    logging: false,
-    pool: { maxConnections: 5, maxIdleTime: 30 }
-});
-
-
-sequelize
-  .authenticate()
-  .then(() => {
-    console.log('Connection has been established successfully.');
-  })
-  .catch(err => {
-    console.error('Unable to connect to the database:', err);
-  });
-
 
   userDataModel = sequelize.define('users', {
     mail: { type: Sequelize.STRING(45) },
@@ -58,7 +33,7 @@ methods.checkMail = function (userMail) {
 
 methods.getPassword = function (userMail) {
   return (
-    sequelize.query('select password from b7cvc44ekzdy7nduprff.users where mail=?',
+    sequelize.query('select password from biqaepposeconcu0el3n.users where mail=?',
     {
       replacements: [userMail],
       type: Sequelize.QueryTypes.SELECT
@@ -78,7 +53,7 @@ methods.saveUser = function (property) {
 
 methods.getCount = function () {
   return (
-    sequelize.query("SELECT count(*) as count from b7cvc44ekzdy7nduprff.users" , { type: sequelize.QueryTypes.SELECT }).then(function (users) {
+    sequelize.query("SELECT count(*) as count from biqaepposeconcu0el3n.users" , { type: sequelize.QueryTypes.SELECT }).then(function (users) {
         return users[0].count;
     })
 );
@@ -86,13 +61,13 @@ methods.getCount = function () {
 
 methods.deleteUsers = function () {
   return (
-    sequelize.query("Delete from b7cvc44ekzdy7nduprff.users where id>1" )
+    sequelize.query("Delete from biqaepposeconcu0el3n.users where id>1" )
 );
 };
 
 methods.getId = function (userMail) {
   return (
-    sequelize.query('select id from b7cvc44ekzdy7nduprff.users where mail=?',
+    sequelize.query('select id from biqaepposeconcu0el3n.users where mail=?',
     {
       replacements: [userMail],
       type: Sequelize.QueryTypes.SELECT

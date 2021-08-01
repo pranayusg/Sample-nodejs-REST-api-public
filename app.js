@@ -1,7 +1,10 @@
 const express = require('express')
-const app = express();
 const cors = require('cors')
-var morgan = require('morgan')
+const logger = require('./api/lib/logger');
+const morgan = require('morgan')
+
+const app = express();
+
 // var bodyParser = require('body-parser') bodyParser.urlencoded(optional)
 const swaggerUi = require('swagger-ui-express');
 const swaggerDocument = require('./swagger.json');
@@ -28,10 +31,12 @@ app.use((req, res, next) => {
     const error = new Error('Please visit https://sample-nodejs-rest-api.herokuapp.com/api-docs/ for API documentation');
     next(error)
 });
+
 app.use((error, req, res, next) => {
     res.status(400).json({
             message: error.message
     })
+    logger.error(`Error message: ${error.message},Error message: ${req.originalUrl} - ${req.method} - ${req.ip}`)
 });
 
 module.exports = app;

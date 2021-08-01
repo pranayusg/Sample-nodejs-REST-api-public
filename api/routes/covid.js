@@ -8,7 +8,7 @@ const checkAuth = require('../middleware/checkAuth')
 var config = readConfig();
 
 function readConfig() {
-    return JSON.parse(fs.readFileSync('api/database/config.json'));
+    return JSON.parse(fs.readFileSync('api/model/config.json'));
 }
 
 var transporter = nodemailer.createTransport({

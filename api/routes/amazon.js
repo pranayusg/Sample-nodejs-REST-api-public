@@ -8,7 +8,7 @@ var config = readConfig();
 
 function readConfig() 
 {
-    return JSON.parse(fs.readFileSync('api/database/config.json'));
+    return JSON.parse(fs.readFileSync('api/model/config.json'));
 }
 
 router.get('/categories/country/:name', async (req, res) => {
