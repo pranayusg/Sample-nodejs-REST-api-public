@@ -1,7 +1,6 @@
 const http=require('http')
 const app=require('./app')
-const logger = require('./api/lib/logger');
-
+const logger = require('./src/lib/logger');
 
 //http://localhost:3000/api-docs/#/
 

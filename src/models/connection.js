@@ -6,7 +6,7 @@ var config = readConfig();
 
 function readConfig() 
 {
-    return JSON.parse(fs.readFileSync('api/model/config.json'));
+    return JSON.parse(fs.readFileSync('src/Models/config.json'));
 }
 
 sequelize = new Sequelize(config.database, config.username, config.password, {

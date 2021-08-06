@@ -13,9 +13,9 @@ module.exports = createLogger({
     defaultMeta: { service: 'sample nodejs rest api' },
     transports: [
       new transports.Console(),
-      new transports.File({ level:'info', filename: 'api/logs/prod/server.log' }),
-      new transports.File({ level:'error', filename: 'api/logs/prod/error.log' }),
-      new transports.File({ level:'debug', filename: 'api/logs/prod/debug.log' }),
+      new transports.File({ level:'info', filename: 'src/logs/prod/server.log' }),
+      new transports.File({ level:'error', filename: 'src/logs/prod/error.log' }),
+      new transports.File({ level:'debug', filename: 'src/logs/prod/debug.log' }),
     ],
   });
 

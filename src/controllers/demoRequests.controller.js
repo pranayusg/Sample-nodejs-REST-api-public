@@ -1,20 +1,12 @@
-/***********************************************************************************************************************
-@Author:pranayusg
-@Description: This file contains demo to different types of requests and various types of parameters used in a REST API
-************************************************************************************************************************/
-const express = require('express')
-const router = express.Router();
 
-const checkAuth = require('../middleware/checkAuth')
-
-router.get('/',checkAuth,  (req, res) => {
+const getRequests=(req, res) => {
     res.status(200).json({
         message: 'Handling GET request.',
         description: 'The GET method is used to retreive data from a server at the specified resource.Since a GET request is only requesting data and not modifying any resources, its considered a safe and idempotent method.GET reqs are read only while others write something on server'
     })
-})
+}
 
-router.get('/statuscodes', checkAuth, (req, res) => {
+const statuscodes=(req, res) => {
     res.status(200).json({
         '1xx': 'Informational – Communicates transfer protocol-level information.',
         '2xx': 'Success – Indicates that the client’s request was accepted successfully. ',
@@ -32,18 +24,18 @@ router.get('/statuscodes', checkAuth, (req, res) => {
         '500': 'Internal Server Error — Server failed to fulfill a valid request due to an error with server',
         '503': 'Service Unavailable — The requested service is not available'
     })
-})
+}
 
-router.get('/parameters', checkAuth, (req, res) => {
+const parameters=(req, res) => {
     res.status(200).json({
         description: 'Parameters are options you can pass with the endpoint (such as specifying the response format or the amount returned) to influence the response.There are several types of parameters: header parameters, path parameters, and query string parameters.',
         headerParameters: 'Parameters included in the request header, usually related to authorization.',
         pathParameters: 'Parameters within the path of the endpoint, before the query string (?). These are usually set off within curly braces.',
         queryStringParameters: 'Parameters in the query string of the endpoint, after the ?.'
     })
-})
+}
 
-router.get('/:pathparameter',checkAuth,  (req, res) => {
+const pathParameter= (req, res) => {
     try {
         const pathparameter = req.params.pathparameter
         res.status(200).json({
@@ -56,9 +48,9 @@ router.get('/:pathparameter',checkAuth,  (req, res) => {
             message: 'Path parameter client error.'
         })
     }
-})
+}
 
-router.post('/', checkAuth, (req, res) => {
+const postRequests=(req, res) => {
     try {
         const userInfo = {
             name: req.body.name,
@@ -75,9 +67,9 @@ router.post('/', checkAuth, (req, res) => {
             message: 'Please provide your info in JSON format correctly for name and description'
         })
     }
-})
+}
 
-router.post('/queryparameters', checkAuth, (req, res) => {
+const queryParameters=(req, res) => {
     try {
         var name = req.query.name
         var description = req.query.description
@@ -92,21 +84,21 @@ router.post('/queryparameters', checkAuth, (req, res) => {
             message: 'Please use POST request with query parameters properly'
         })
     }
-})
+}
 
-
-router.patch('/', checkAuth, (req, res) => {
+const patchRequests=(req, res) => {
     res.status(200).json({
         message: 'Handling PATCH request',
         description: 'PATCH requests are to make partial update on a resource. Also PUT requests modifys a resource entity, so to make more clear – PATCH method is the correct choice for partially updating an existing resource, and PUT should only be used if you’re replacing a resource in its entirety.'
     })
-})
+}
 
-router.delete('/', checkAuth, (req, res) => {
+const deleteRequests= (req, res) => {
     res.status(200).json({
         message: 'Handling DELETE request',
         description: 'The DELETE method requests that the origin server delete the resource recognized by the Request-URI.A successful response of DELETE requests SHOULD be HTTP response code 200 (OK) if the response includes an entity describing the status, 202 (Accepted) if the action has been queued, or 204 (No Content) if the action has been performed but the response does not include an entity.'
     })
-})
+}
 
-module.exports = router;
+
+module.exports={getRequests,statuscodes,parameters,pathParameter,postRequests,queryParameters,patchRequests,deleteRequests}

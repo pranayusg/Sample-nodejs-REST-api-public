@@ -9,7 +9,7 @@ const logger = require('../lib/logger');
 var config = readConfig();
 function readConfig() 
 {
-    return JSON.parse(fs.readFileSync('api/model/config.json'));
+    return JSON.parse(fs.readFileSync('src/Models/config.json'));
 }
 
 module.exports = (req, res, next) => {

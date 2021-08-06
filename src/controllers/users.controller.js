@@ -1,26 +1,34 @@
-const express = require('express')
-const router = express.Router();
-const fs = require('fs');
+
 const jwt = require('jsonwebtoken');
-const moment = require('moment')
-var nodemailer = require('nodemailer');
-
-const datastore = require('../model/datastore')
 const bcrypt = require('bcrypt');
+const moment = require('moment')
+const datastore = require('../models/datastore')
+const mailService=require('../services/mail.service');
+const { validationResult } = require('express-validator');
+const fs = require('fs');
 
-var saltRounds = 10;
+const config = JSON.parse(fs.readFileSync('src/models/config.json'))
 
-var config = readConfig();
-const checkAuth = require('../middleware/checkAuth')
+const saltRounds = 10;
+const myValidationResult  = validationResult.withDefaults({
+    formatter: error => {
+      return {
+        msg:error.msg,
+        param:error.param,
+        location: error.location
+      };
+    },
+  });
 
-function readConfig() {
-    return JSON.parse(fs.readFileSync('api/model/config.json'));
-}
-
-router.post('/signup', (req, res) => {
+const signup =  (req, res) => {   
     try {
-        if (req.body.mail.includes('@') && req.body.password.length>1) {
-            bcrypt.hash(req.body.password, saltRounds, function (err, hash) {
+        const errors = myValidationResult(req).array();
+
+        if (errors.length>0) {
+            return res.status(400).json({ errors:errors });
+        }
+        
+            bcrypt.hash(req.body.password, saltRounds,(err, hash) =>{
                 if (err) {
                     console.error(err)
                 }
@@ -32,7 +40,7 @@ router.post('/signup', (req, res) => {
                     }
 
                     datastore.checkMail(property.mail)
-                        .then(function (exists) {
+                        .then((exists) => {
                             if (exists) {
                                 res.status(404).json({
                                     message: 'This mail already exists'
@@ -40,12 +48,12 @@ router.post('/signup', (req, res) => {
                             }
                             else {
                                 datastore.getCount()
-                                    .then(function (count) {
+                                    .then((count)=> {
                                         if (count > 20) {
                                             datastore.deleteUsers()
                                         }
                                         datastore.saveUser(property)
-                                            .then(function () {
+                                            .then(()=> {
                                                 res.status(200).json({
                                                     message: 'User saved'
                                                 })
@@ -56,61 +64,37 @@ router.post('/signup', (req, res) => {
                         });
                 }
             })
-        }
-        else {
-            res.status(422).json({
-                message: 'Invalid mail'
-            })
-        }
+        
+       
     }
     catch (error) {
         res.status(400).json({
             message: 'Invalid request body'
         })
     }
-})
+}
 
-router.post('/signin', (req, res) => {
+const signin =  (req, res) => {   
     try {
         datastore.checkMail(req.body.mail)
-            .then(function (exists) {
+            .then((exists) => {
                 if (exists) {
                     datastore.getPassword(req.body.mail)
-                        .then(function (encryptedPassword) {
-                            bcrypt.compare(req.body.password, encryptedPassword, function (err, result) {
+                        .then((encryptedPassword)=> {
+                           
+                            bcrypt.compare(req.body.password, encryptedPassword,(err, result)=> {
                                 if (err) {
                                     console.error(err)
                                 }
                                 else {
                                     if (result == true) {
                                         datastore.getId(req.body.mail)
-                                            .then(function (id) {
+                                            .then((id)=> {
                                                 payload = { mail: req.body.mail, id: id }
                                                 options ={ expiresIn: '1h' ,issuer:'pranayusg',audience:'RestNodeAPI'}
                                                 token = jwt.sign(payload, config.privateKey,options );
 
-                                                var transporter = nodemailer.createTransport({
-                                                    service: 'gmail',
-                                                    auth: {
-                                                      user: config.mailUsername,
-                                                      pass: config.mailPassword
-                                                    }
-                                                  });
-                                                  
-                                                  var mailOptions = {
-                                                    from: config.mailUsername,
-                                                    to: 'pranayu6@gmail.com',
-                                                    subject: 'Alert your API was accessed',
-                                                    text: req.body.mail+' has signed in your API'
-                                                  };
-                                                  
-                                                  transporter.sendMail(mailOptions, function(error, info){
-                                                    if (error) {
-                                                      console.log('There is a error');
-                                                    } else {
-                                                      console.log('Email sent');
-                                                    }
-                                                  });
+                                                mailService.sentMail(req.body.mail+' has signed in');
 
                                                 res.status(200).json({
                                                     token: token,
@@ -140,9 +124,9 @@ router.post('/signin', (req, res) => {
             message: 'Invalid request body'
         })
     }
-})
+}
 
-router.get('/decodetoken', checkAuth, (req, res) => {
+const decodetoken =  (req, res) => {  
     req.userData.tokenDuration='1 hour'
     req.userData.issuedAt=moment.unix(req.userData.iat).format("DD-MM-YYYY H:mm:ss");
     req.userData.expiresAT=moment.unix(req.userData.exp).format("DD-MM-YYYY H:mm:ss");
@@ -154,6 +138,7 @@ router.get('/decodetoken', checkAuth, (req, res) => {
     res.status(200).json(
         req.userData
     )
-})
+}
 
-module.exports = router;
+
+module.exports={signup,signin,decodetoken}
