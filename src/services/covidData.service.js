@@ -1,7 +1,4 @@
 const request = require('request-promise');
-const fs = require('fs');
-
-const config = JSON.parse(fs.readFileSync('src/models/config.json'));
 
 function getCovidData(country) {
     return new Promise((resolve, reject) => {
@@ -10,7 +7,7 @@ function getCovidData(country) {
         let options = {
             json: true,
             method: 'GET',
-            url: config.covidUrl
+            url: process.env.COVID_URL
         };
 
         request(options)

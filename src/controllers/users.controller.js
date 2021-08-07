@@ -1,16 +1,12 @@
-
 const jwt = require('jsonwebtoken');
 const bcrypt = require('bcrypt');
 const moment = require('moment')
-const datastore = require('../models/datastore')
+const usersModel = require('../models/users.model')
 const mailService=require('../services/mail.service');
 const { validationResult } = require('express-validator');
-const fs = require('fs');
-
-const config = JSON.parse(fs.readFileSync('src/models/config.json'))
 
 const saltRounds = 10;
-const myValidationResult  = validationResult.withDefaults({
+const signUpValidationResult  = validationResult.withDefaults({
     formatter: error => {
       return {
         msg:error.msg,
@@ -20,66 +16,57 @@ const myValidationResult  = validationResult.withDefaults({
     },
   });
 
-const signup =  (req, res) => {   
-    try {
-        const errors = myValidationResult(req).array();
+const signup = (req, res) => {
+    const errors = signUpValidationResult(req).array();
 
-        if (errors.length>0) {
-            return res.status(400).json({ errors:errors });
+    if (errors.length > 0) {
+        return res.status(400).json({ errors: errors });
+    }
+
+    bcrypt.hash(req.body.password, saltRounds, (err, hash) => {
+        if (err) {
+            console.error(err)
         }
-        
-            bcrypt.hash(req.body.password, saltRounds,(err, hash) =>{
-                if (err) {
-                    console.error(err)
-                }
-                else {
-                    // Store hash in your password DB.
-                    var property = {
-                        mail: req.body.mail,
-                        password: hash
-                    }
+        else {
+            // Store hash in your password DB.
+            let property = {
+                mail: req.body.mail,
+                password: hash
+            }
 
-                    datastore.checkMail(property.mail)
-                        .then((exists) => {
-                            if (exists) {
-                                res.status(404).json({
-                                    message: 'This mail already exists'
-                                })
-                            }
-                            else {
-                                datastore.getCount()
-                                    .then((count)=> {
-                                        if (count > 20) {
-                                            datastore.deleteUsers()
-                                        }
-                                        datastore.saveUser(property)
-                                            .then(()=> {
-                                                res.status(200).json({
-                                                    message: 'User saved'
-                                                })
-                                            }
-                                            )
-                                    })
-                            }
-                        });
-                }
-            })
-        
-       
-    }
-    catch (error) {
-        res.status(400).json({
-            message: 'Invalid request body'
-        })
-    }
+            usersModel.checkMail(property.mail)
+                .then((exists) => {
+                    if (exists) {
+                        res.status(404).json({
+                            message: 'This mail already exists'
+                        })
+                    }
+                    else {
+                        usersModel.getCount()
+                            .then((count) => {
+                                if (count > 20) {
+                                    usersModel.deleteUsers()
+                                }
+                                usersModel.saveUser(property)
+                                    .then(() => {
+                                        res.status(200).json({
+                                            message: 'User saved'
+                                        })
+                                    }
+                                    )
+                            })
+                    }
+                });
+        }
+    })
 }
+    
 
 const signin =  (req, res) => {   
-    try {
-        datastore.checkMail(req.body.mail)
+        usersModel.checkMail(req.body.mail)
             .then((exists) => {
                 if (exists) {
-                    datastore.getPassword(req.body.mail)
+                    usersModel.getPassword(req.body.mail)
                         .then((encryptedPassword)=> {
                            
                             bcrypt.compare(req.body.password, encryptedPassword,(err, result)=> {
@@ -88,11 +75,11 @@ const signin =  (req, res) => {
                                 }
                                 else {
                                     if (result == true) {
-                                        datastore.getId(req.body.mail)
+                                        usersModel.getId(req.body.mail)
                                             .then((id)=> {
                                                 payload = { mail: req.body.mail, id: id }
                                                 options ={ expiresIn: '1h' ,issuer:'pranayusg',audience:'RestNodeAPI'}
-                                                token = jwt.sign(payload, config.privateKey,options );
+                                                token = jwt.sign(payload, process.env.PRIVATE_KEY,options );
 
                                                 mailService.sentMail(req.body.mail+' has signed in');
 
@@ -104,7 +91,7 @@ const signin =  (req, res) => {
                                     }
                                     else {
                                         res.status(404).json({
-                                            message: 'wrong password'
+                                            message: 'Wrong password'
                                         })
                                     }
                                 }
@@ -114,17 +101,11 @@ const signin =  (req, res) => {
                 }
                 else {
                     res.status(422).json({
-                        message: "Mail doesn't exist.Please use the signup route to create user first"
+                        message: "Mail doesn't exist.Please use the signup route to create user first or enter correct mail"
                     })
                 }
             });
     }
-    catch (error) {
-        res.status(400).json({
-            message: 'Invalid request body'
-        })
-    }
-}
 
 const decodetoken =  (req, res) => {  
     req.userData.tokenDuration='1 hour'

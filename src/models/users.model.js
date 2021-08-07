@@ -61,7 +61,7 @@ methods.getCount = function () {
 
 methods.deleteUsers = function () {
   return (
-    sequelize.query("Delete from biqaepposeconcu0el3n.users where id>1" )
+    sequelize.query("delete from biqaepposeconcu0el3n.users where id>1" )
 );
 };
 

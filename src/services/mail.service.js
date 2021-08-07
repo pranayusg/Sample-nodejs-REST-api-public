@@ -1,19 +1,16 @@
 const nodemailer = require('nodemailer');
-const fs = require('fs');
-
-const config = JSON.parse(fs.readFileSync('src/models/config.json'));
 
 function sentMail(mssg) {
     const transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
-            user: config.mailUsername,
-            pass: config.mailPassword
+            user: process.env.MAIL_USER,
+            pass: process.env.MAIL_PASS
         }
     });
 
     const mailOptions = {
-        from: config.mailUsername,
+        from: process.env.MAIL_USER,
         to: 'pranayu6@gmail.com',
         subject: 'Alert your API was accessed',
         text: mssg

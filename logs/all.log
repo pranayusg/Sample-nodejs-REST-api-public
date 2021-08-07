@@ -1,0 +1,11 @@
+2021-08-08 02:00:03 http: POST /users/signup 400 3.160 ms - 70
+2021-08-08 02:01:37 debug: Server started and running on port : 3000
+2021-08-08 02:01:39 debug: Connection has been established successfully.
+2021-08-08 02:02:09 debug: Server started and running on port : 3000
+2021-08-08 02:02:11 debug: Connection has been established successfully.
+2021-08-08 02:02:18 debug: Server started and running on port : 3000
+2021-08-08 02:02:19 debug: Connection has been established successfully.
+2021-08-08 02:06:03 debug: Server started and running on port : 3000
+2021-08-08 02:06:04 debug: Connection has been established successfully.
+2021-08-08 02:06:20 debug: Server started and running on port : 3000
+2021-08-08 02:06:21 debug: Connection has been established successfully.

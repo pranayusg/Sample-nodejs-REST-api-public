@@ -1,18 +1,11 @@
 var Sequelize = require('sequelize');
-const fs = require('fs');
+
 const logger = require('../lib/logger');
 
-var config = readConfig();
-
-function readConfig() 
-{
-    return JSON.parse(fs.readFileSync('src/Models/config.json'));
-}
-
-sequelize = new Sequelize(config.database, config.username, config.password, {
-    host: config.host,
-    dialect: config.dialect,
-    port:config.port,
+sequelize = new Sequelize(process.env.DB_NAME, process.env.DB_USER, process.env.DB_PASS, {
+    host: process.env.DB_HOST,
+    dialect: process.env.DIALECT,
+    port:process.env.DB_PORT,
     logging: false,
     pool: { maxConnections: 5, maxIdleTime: 30 }
 });
@@ -21,12 +14,10 @@ sequelize = new Sequelize(config.database, config.username, config.password, {
 sequelize
   .authenticate()
   .then(() => {
-    logger.info('Connection has been established successfully.')
-    console.log('Connection has been established successfully.');
+    logger.debug('Connection has been established successfully.')
   })
   .catch(err => {
-    logger.info('Unable to connect to the database:', err)
-    console.error('Unable to connect to the database:', err);
+    logger.error('Unable to connect to the database:', err)
   });
 
  module.exports=sequelize; 

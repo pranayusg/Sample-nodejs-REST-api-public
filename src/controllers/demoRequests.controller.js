@@ -1,4 +1,3 @@
-
 const getRequests=(req, res) => {
     res.status(200).json({
         message: 'Handling GET request.',
@@ -71,8 +70,8 @@ const postRequests=(req, res) => {
 
 const queryParameters=(req, res) => {
     try {
-        var name = req.query.name
-        var description = req.query.description
+        let name = req.query.name
+        let description = req.query.description
         res.status(200).json({
             message: 'POST request with query parameters',
             userInfo: { name: name, description: description },

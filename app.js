@@ -1,19 +1,20 @@
-const express = require('express')
-const cors = require('cors')
+const express = require('express');
+const cors = require('cors');
 const swaggerUi = require('swagger-ui-express');
-const morgan = require('morgan')
+const morgan = require('morgan');
 const swaggerDocument = require('./src/docs/swagger.json');
 const logger = require('./src/lib/logger');
+const morganMiddleware=require('./src/middlewares/morgan.middleware');
+require('dotenv').config()
 
 const demorequests = require('./src/routes/demoRequests.route')
 const covidRoutes = require('./src/routes/covid.route')
 const usersRoutes = require('./src/routes/users.route')
 const app = express();
 
-// var bodyParser = require('body-parser') bodyParser.urlencoded(optional)
-
 app.use(cors())
-app.use(morgan('dev'));
+// app.use(morgan('dev'));
+app.use(morganMiddleware);
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
