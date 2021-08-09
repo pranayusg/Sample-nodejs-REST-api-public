@@ -9,3 +9,100 @@
 2021-08-08 02:06:04 debug: Connection has been established successfully.
 2021-08-08 02:06:20 debug: Server started and running on port : 3000
 2021-08-08 02:06:21 debug: Connection has been established successfully.
+2021-08-08 14:10:49 debug: Server started and running on port : 3000
+2021-08-08 14:10:51 debug: Connection has been established successfully.
+2021-08-08 21:15:14 debug: Server started and running on port : 3000
+2021-08-08 21:15:14 error: Error message: Please visit https://sample-nodejs-rest-api.herokuapp.com/api-docs/ for API documentation,Error message: / - GET - ::ffff:127.0.0.1
+2021-08-08 21:15:14 http: GET / 400 4.416 ms - 103
+2021-08-08 21:15:14 error: Error message: Please visit https://sample-nodejs-rest-api.herokuapp.com/api-docs/ for API documentation,Error message: /favicon.ico - GET - ::ffff:127.0.0.1
+2021-08-08 21:15:14 http: GET /favicon.ico 400 2.741 ms - 103
+2021-08-08 21:15:15 debug: Connection has been established successfully.
+2021-08-08 21:15:20 http: GET /api-docs/ 200 3.751 ms - 3104
+2021-08-08 21:15:20 http: GET /api-docs/swagger-ui-init.js 200 0.652 ms - 22562
+2021-08-08 21:15:20 http: GET /api-docs/swagger-ui.css 200 59.345 ms - 143074
+2021-08-08 21:15:20 http: GET /api-docs/swagger-ui-standalone-preset.js 200 34.466 ms - 329649
+2021-08-08 21:15:20 http: GET /api-docs/swagger-ui-bundle.js 200 2.032 ms - 1038857
+2021-08-08 21:15:21 http: GET /api-docs/favicon-32x32.png 200 12.892 ms - 628
+2021-08-08 21:15:29 http: GET /api-docs/favicon-32x32.png 304 1.544 ms - -
+2021-08-08 21:15:49 http: POST /users/signup 400 23.601 ms - 70
+2021-08-08 21:16:04 http: POST /users/signup 400 1.851 ms - 70
+2021-08-08 21:16:12 http: POST /users/signup 400 1.304 ms - 70
+2021-08-08 21:20:22 http: POST /users/signup 400 1.365 ms - 70
+2021-08-08 21:20:43 http: POST /users/signup 400 2.151 ms - 70
+2021-08-08 21:21:01 http: POST /users/signup 400 1.291 ms - 70
+2021-08-08 21:21:03 http: POST /users/signup 400 1.113 ms - 70
+2021-08-08 21:21:04 http: POST /users/signup 400 1.190 ms - 70
+2021-08-08 21:21:04 http: POST /users/signup 400 1.057 ms - 70
+2021-08-08 22:02:12 debug: Server started and running on port : 3000
+2021-08-08 22:02:15 debug: Connection has been established successfully.
+2021-08-08 22:02:20 http: POST /users/signup 200 863.549 ms - 24
+2021-08-08 22:02:32 debug: Server started and running on port : 3000
+2021-08-08 22:02:34 debug: Connection has been established successfully.
+2021-08-08 22:02:51 debug: Server started and running on port : 3000
+2021-08-08 22:02:53 debug: Connection has been established successfully.
+2021-08-08 22:03:59 http: POST /users/signup 200 1906.366 ms - 24
+2021-08-09 15:08:43 error: Error message: Please visit https://sample-nodejs-rest-api.herokuapp.com/api-docs/ for API documentation,Error message: /users/decodetoken - POST - ::ffff:127.0.0.1
+2021-08-09 15:09:11 error: Error message: Please visit https://sample-nodejs-rest-api.herokuapp.com/api-docs/ for API documentation,Error message: /users/decodetoken - POST - ::ffff:127.0.0.1
+2021-08-09 15:09:59 error: Error message: Please visit https://sample-nodejs-rest-api.herokuapp.com/api-docs/ for API documentation,Error message: /users/decodetoken - POST - ::ffff:127.0.0.1
+2021-08-09 15:10:38 debug: Server started and running on port : 3000
+2021-08-09 15:10:39 debug: Connection has been established successfully.
+2021-08-09 15:27:32 error: Error message: Please visit https://sample-nodejs-rest-api.herokuapp.com/api-docs/ for API documentation,Error message: / - GET - ::1
+2021-08-09 15:27:32 http: GET / 400 3.958 ms - 103
+2021-08-09 15:27:33 error: Error message: Please visit https://sample-nodejs-rest-api.herokuapp.com/api-docs/ for API documentation,Error message: /favicon.ico - GET - ::1
+2021-08-09 15:27:33 http: GET /favicon.ico 400 0.958 ms - 103
+2021-08-09 15:27:44 http: GET /api-docs/ 200 3.838 ms - 3104
+2021-08-09 15:27:44 http: GET /api-docs/swagger-ui-init.js 200 0.504 ms - 22562
+2021-08-09 15:27:44 http: GET /api-docs/swagger-ui.css 200 68.431 ms - 143074
+2021-08-09 15:27:44 http: GET /api-docs/swagger-ui-bundle.js 200 11.504 ms - 1038857
+2021-08-09 15:27:44 http: GET /api-docs/swagger-ui-standalone-preset.js 200 211.498 ms - 329649
+2021-08-09 15:27:44 http: GET /api-docs/favicon-32x32.png 200 15.836 ms - 628
+2021-08-09 15:27:47 http: GET /api-docs/favicon-32x32.png 304 1.250 ms - -
+2021-08-09 15:27:54 http: GET /api-docs/favicon-32x32.png 304 0.647 ms - -
+2021-08-09 15:27:55 http: GET /api-docs/favicon-32x32.png 304 0.676 ms - -
+2021-08-09 15:28:02 http: POST /users/signin 200 1200.670 ms - 350
+2021-08-09 15:28:07 debug: Status Mail sent
+2021-08-09 15:28:10 http: GET /api-docs/favicon-32x32.png 304 0.674 ms - -
+2021-08-09 15:28:12 http: GET /api-docs/favicon-32x32.png 304 0.663 ms - -
+2021-08-09 15:28:13 http: GET /api-docs/favicon-32x32.png 304 1.910 ms - -
+2021-08-09 15:28:17 debug: Auth Success /users/decodetoken - GET - ::1
+2021-08-09 15:28:17 http: GET /users/decodetoken 200 6.263 ms - 1022
+2021-08-09 15:29:13 debug: Server started and running on port : 3000
+2021-08-09 15:29:15 debug: Connection has been established successfully.
+2021-08-09 15:29:38 error: Error message: Please visit https://sample-nodejs-rest-api.herokuapp.com/api-docs/ for API documentation,Error message: /users/decodetoken - POST - ::ffff:127.0.0.1
+2021-08-09 15:29:43 error: Error message: Please visit https://sample-nodejs-rest-api.herokuapp.com/api-docs/ for API documentation,Error message: /users/decodetoken - POST - ::ffff:127.0.0.1
+2021-08-09 15:30:10 error: Error message: Please visit https://sample-nodejs-rest-api.herokuapp.com/api-docs/ for API documentation,Error message: /users/decodetoken - POST - ::ffff:127.0.0.1
+2021-08-09 15:30:24 error: Error message: Please visit https://sample-nodejs-rest-api.herokuapp.com/api-docs/ for API documentation,Error message: /users/decodetoken - POST - ::ffff:127.0.0.1
+2021-08-09 15:31:49 error: Error message: Please visit https://sample-nodejs-rest-api.herokuapp.com/api-docs/ for API documentation,Error message: /users/decodetoken - POST - ::ffff:127.0.0.1
+2021-08-09 15:32:02 error: Error message: Please visit https://sample-nodejs-rest-api.herokuapp.com/api-docs/ for API documentation,Error message: /users/decodetoken - POST - ::ffff:127.0.0.1
+2021-08-09 15:34:41 error: Error message: Please visit https://sample-nodejs-rest-api.herokuapp.com/api-docs/ for API documentation,Error message: /users/decodetoken - POST - ::ffff:127.0.0.1
+2021-08-09 15:34:49 error: Error message: Please visit https://sample-nodejs-rest-api.herokuapp.com/api-docs/ for API documentation,Error message: /users/decodetoken - POST - ::ffff:127.0.0.1
+2021-08-09 15:35:11 error: Error message: Please visit https://sample-nodejs-rest-api.herokuapp.com/api-docs/ for API documentation,Error message: /users/decodetoken - POST - ::ffff:127.0.0.1
+2021-08-09 15:36:04 error: Error message: Please visit https://sample-nodejs-rest-api.herokuapp.com/api-docs/ for API documentation,Error message: /users/decodetoken - POST - ::ffff:127.0.0.1
+2021-08-09 15:36:29 error: Error message: Please visit https://sample-nodejs-rest-api.herokuapp.com/api-docs/ for API documentation,Error message: /users/decodetoken - POST - ::ffff:127.0.0.1
+2021-08-09 15:37:05 error: Error message: Please visit https://sample-nodejs-rest-api.herokuapp.com/api-docs/ for API documentation,Error message: /users/decodetoken - POST - ::ffff:127.0.0.1
+2021-08-09 15:37:40 error: Error message: Please visit https://sample-nodejs-rest-api.herokuapp.com/api-docs/ for API documentation,Error message: /users/decodetoken - POST - ::ffff:127.0.0.1
+2021-08-09 15:38:03 error: Error message: Please visit https://sample-nodejs-rest-api.herokuapp.com/api-docs/ for API documentation,Error message: /users/decodetoken - POST - ::ffff:127.0.0.1
+2021-08-09 15:38:41 error: Error message: Please visit https://sample-nodejs-rest-api.herokuapp.com/api-docs/ for API documentation,Error message: /users/decodetoken - POST - ::ffff:127.0.0.1
+2021-08-09 15:39:01 error: Error message: Please visit https://sample-nodejs-rest-api.herokuapp.com/api-docs/ for API documentation,Error message: /users/decodetoken - POST - ::ffff:127.0.0.1
+2021-08-09 15:39:25 error: Error message: Please visit https://sample-nodejs-rest-api.herokuapp.com/api-docs/ for API documentation,Error message: /users/decodetoken - POST - ::ffff:127.0.0.1
+2021-08-09 15:39:35 error: Error message: Please visit https://sample-nodejs-rest-api.herokuapp.com/api-docs/ for API documentation,Error message: /users/decodetoken - POST - ::ffff:127.0.0.1
+2021-08-09 15:39:54 error: Error message: Please visit https://sample-nodejs-rest-api.herokuapp.com/api-docs/ for API documentation,Error message: /users/decodetoken - POST - ::ffff:127.0.0.1
+2021-08-09 15:50:11 error: Auth failed /covid/country/name - GET - ::ffff:127.0.0.1 - /country/name
+2021-08-09 17:30:08 error: Auth failed /covid/country/name - GET - ::ffff:127.0.0.1 - /country/name
+2021-08-09 17:36:49 debug: Server started and running on port : 3000
+2021-08-09 17:36:50 debug: Connection has been established successfully.
+2021-08-09 17:36:56 http: GET /api-docs/ 200 7.102 ms - 3104
+2021-08-09 17:36:56 http: GET /api-docs/swagger-ui-init.js 304 0.647 ms - -
+2021-08-09 17:36:56 http: GET /api-docs/swagger-ui-bundle.js 304 6.176 ms - -
+2021-08-09 17:36:56 http: GET /api-docs/swagger-ui-standalone-preset.js 304 9.107 ms - -
+2021-08-09 17:36:56 http: GET /api-docs/swagger-ui.css 200 5.388 ms - 143074
+2021-08-09 17:36:56 http: GET /api-docs/favicon-32x32.png 200 1.130 ms - 628
+2021-08-09 17:37:02 http: GET /api-docs/favicon-32x32.png 304 0.956 ms - -
+2021-08-09 17:45:21 http: GET /api-docs/favicon-32x32.png 200 1.638 ms - 628
+2021-08-09 17:45:24 http: GET /api-docs/favicon-32x32.png 304 0.920 ms - -
+2021-08-09 17:45:27 error: Auth failed /covid/country/name/India - GET - ::1 - /country/name/India
+2021-08-09 17:45:27 http: GET /covid/country/name/India 401 2.780 ms - 25
+2021-08-09 17:58:07 debug: Server started and running on port : 3000
+2021-08-09 17:58:08 debug: Connection has been established successfully.
+2021-08-09 17:58:35 debug: Server started and running on port : 3000
+2021-08-09 17:58:37 debug: Connection has been established successfully.

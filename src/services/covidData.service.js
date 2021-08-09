@@ -1,9 +1,10 @@
 const request = require('request-promise');
+const logger = require('../lib/logger');
 
 function getCovidData(country) {
     return new Promise((resolve, reject) => {
-       let countryClean= country.charAt(0).toUpperCase() + country.slice(1);
-       let index;
+        let countryClean = country.charAt(0).toUpperCase() + country.slice(1);
+        let index;
         let options = {
             json: true,
             method: 'GET',
@@ -11,10 +12,10 @@ function getCovidData(country) {
         };
 
         request(options)
-            .then((data)=> {
+            .then((data) => {
                 for (i = 0; i < data.length; i++) {
                     if (data[i].country == countryClean) {
-                       index = i;
+                        index = i;
                         break;
                     }
                 }
@@ -29,8 +30,8 @@ function getCovidData(country) {
                 })
 
             })
-            .catch((err)=>{
-                console.log(err);
+            .catch((err) => {
+                logger.error('Error while receiving covid data :' + err);
                 reject();
             })
     })
