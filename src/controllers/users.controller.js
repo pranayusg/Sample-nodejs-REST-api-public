@@ -77,10 +77,10 @@ const signin =  (req, res) => {
                                     if (result == true) {
                                         usersModel.getId(req.body.mail)
                                             .then((id)=> {
-                                                payload = { mail: req.body.mail, id: id }
-                                                options ={ expiresIn: '1h' ,issuer:'pranayusg',audience:'RestNodeAPI'}
-                                                token = jwt.sign(payload, process.env.PRIVATE_KEY,options );
-
+                                                let payload = { mail: req.body.mail, id: id };
+                                                let options ={ expiresIn: process.env.TOKEN_EXPIRATION ,issuer:process.env.TOKEN_ISSUER,audience:process.env.TOKEN_AUDIENCE};
+                                                let token = jwt.sign(payload, process.env.PRIVATE_KEY,options );
+ 
                                                 mailService.sentMail(req.body.mail+' has signed in');
 
                                                 res.status(200).json({
@@ -108,16 +108,16 @@ const signin =  (req, res) => {
     }
 
 const decodetoken =  (req, res) => {  
-    req.userData.tokenDuration='1 hour'
-    req.userData.issuedAt=moment.unix(req.userData.iat).format("DD-MM-YYYY H:mm:ss");
-    req.userData.expiresAT=moment.unix(req.userData.exp).format("DD-MM-YYYY H:mm:ss");
-    req.userData.decodedInfo = {
+    res.locals.userData.tokenDuration='1 hour'
+    res.locals.userData.issuedAt=moment.unix(res.locals.userData.iat).format("DD-MM-YYYY H:mm:ss");
+    res.locals.userData.expiresAT=moment.unix(res.locals.userData.exp).format("DD-MM-YYYY H:mm:ss");
+    res.locals.userData.decodedInfo = {
         description:'JSON Web Token is a standard used to create access tokens for an application.It works this way: the server generates a token that certifies the user identity, and sends it to the client.The client will send the token back to the server for every subsequent request, so the server knows the request comes from a particular identity.This architecture proves to be very effective in modern Web Apps, where after the user is authenticated API requests are performed.',
         issuer:'The issuer of the token',
         audience:'To know what or who the token is intended for.Suppose I regularly use JWTs from AUTH SERVER to sign in to several several websites, including A and B. Without the aud claim, the JWTs would be identical. This would allow a malicious admin from A to use my JWT to authenticate to B.'
     }
     res.status(200).json(
-        req.userData
+        res.locals.userData
     )
 }
 

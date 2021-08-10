@@ -12,7 +12,7 @@ function sentMail(mssg) {
 
     const mailOptions = {
         from: process.env.MAIL_USER,
-        to: 'pranayu6@gmail.com',
+        to: process.env.MAIL_TO,
         subject: 'Alert your API was accessed',
         text: mssg
     };

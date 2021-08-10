@@ -15,7 +15,7 @@ module.exports = (req, res, next) => {
 
         logger.debug(`Auth Success ${req.originalUrl} - ${req.method} - ${req.ip}`);
 
-        req.userData=decoded;
+        res.locals.userData=decoded;
         next();
     }
     catch (error) {

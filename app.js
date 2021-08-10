@@ -13,7 +13,7 @@ const usersRoutes = require('./src/routes/users.route')
 const app = express();
 
 app.use(cors())
-// app.use(morgan('dev'));
+app.set('trust proxy', 1);
 app.use(morganMiddleware);
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());

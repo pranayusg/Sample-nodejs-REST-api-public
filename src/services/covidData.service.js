@@ -10,16 +10,17 @@ function getCovidData(country) {
             method: 'GET',
             url: process.env.COVID_URL
         };
-
+      
         request(options)
             .then((data) => {
+                
                 for (i = 0; i < data.length; i++) {
                     if (data[i].country == countryClean) {
                         index = i;
                         break;
                     }
                 }
-
+              
                 resolve({
                     "infected": data[index].infected,
                     "tested": data[index].tested,

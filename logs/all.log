@@ -106,3 +106,394 @@
 2021-08-09 17:58:08 debug: Connection has been established successfully.
 2021-08-09 17:58:35 debug: Server started and running on port : 3000
 2021-08-09 17:58:37 debug: Connection has been established successfully.
+2021-08-09 22:57:00 debug: Server started and running on port : 3000
+2021-08-09 22:57:03 debug: Connection has been established successfully.
+2021-08-09 22:59:39 debug: Server started and running on port : 3000
+2021-08-09 22:59:41 debug: Connection has been established successfully.
+2021-08-09 23:00:39 debug: Server started and running on port : 3000
+2021-08-09 23:00:41 debug: Connection has been established successfully.
+2021-08-09 23:02:24 error: Error message: Please visit https://sample-nodejs-rest-api.herokuapp.com/api-docs/ for API documentation,Error message: / - GET - ::1
+2021-08-09 23:02:24 http: GET / 400 4.627 ms - 103
+2021-08-09 23:02:24 error: Error message: Please visit https://sample-nodejs-rest-api.herokuapp.com/api-docs/ for API documentation,Error message: /favicon.ico - GET - ::1
+2021-08-09 23:02:24 http: GET /favicon.ico 400 1.385 ms - 103
+2021-08-09 23:02:31 http: GET /api-docs/ 200 3.813 ms - 3104
+2021-08-09 23:02:31 http: GET /api-docs/swagger-ui-init.js 200 0.507 ms - 22562
+2021-08-09 23:02:31 http: GET /api-docs/swagger-ui.css 200 36.301 ms - 143074
+2021-08-09 23:02:32 http: GET /api-docs/swagger-ui-standalone-preset.js 200 38.642 ms - 329649
+2021-08-09 23:02:32 http: GET /api-docs/swagger-ui-bundle.js 200 11.524 ms - 1038857
+2021-08-09 23:02:32 http: GET /api-docs/favicon-32x32.png 200 14.279 ms - 628
+2021-08-09 23:02:34 http: GET /api-docs/favicon-32x32.png 304 1.242 ms - -
+2021-08-09 23:02:42 http: POST /users/signin 200 1178.207 ms - 350
+2021-08-09 23:02:47 debug: Status Mail sent
+2021-08-09 23:02:58 http: GET /api-docs/favicon-32x32.png 304 0.722 ms - -
+2021-08-09 23:02:59 http: GET /api-docs/favicon-32x32.png 304 1.142 ms - -
+2021-08-09 23:03:02 debug: Auth Success /users/decodetoken - GET - ::1
+2021-08-09 23:03:02 error: Error message: Cannot read property 'iat' of undefined,Error message: /users/decodetoken - GET - ::1
+2021-08-09 23:03:02 http: GET /users/decodetoken 400 4.001 ms - 53
+2021-08-09 23:03:35 debug: Server started and running on port : 3000
+2021-08-09 23:03:37 debug: Connection has been established successfully.
+2021-08-09 23:03:40 debug: Auth Success /users/decodetoken - GET - ::1
+2021-08-09 23:03:40 http: GET /users/decodetoken 200 9.649 ms - 1021
+2021-08-10 01:07:21 debug: Server started and running on port : 3000
+2021-08-10 01:07:23 debug: Connection has been established successfully.
+2021-08-10 01:11:16 debug: Server started and running on port : 3000
+2021-08-10 01:11:18 debug: Connection has been established successfully.
+2021-08-10 01:15:33 debug: Server started and running on port : 3000
+2021-08-10 01:15:34 debug: Connection has been established successfully.
+2021-08-10 01:15:43 debug: Server started and running on port : 3000
+2021-08-10 01:15:45 debug: Connection has been established successfully.
+2021-08-10 01:16:14 debug: Server started and running on port : 3000
+2021-08-10 01:16:15 debug: Connection has been established successfully.
+2021-08-10 01:22:17 debug: Server started and running on port : 3000
+2021-08-10 01:22:19 debug: Connection has been established successfully.
+2021-08-10 01:24:42 http: GET /api-docs/favicon-32x32.png 200 5.073 ms - 628
+2021-08-10 01:24:49 http: POST /users/signin 404 1404.895 ms - 28
+2021-08-10 01:24:55 http: POST /users/signin 200 558.438 ms - 350
+2021-08-10 01:24:59 debug: Status Mail sent
+2021-08-10 01:25:05 http: GET /api-docs/favicon-32x32.png 304 1.854 ms - -
+2021-08-10 01:25:15 http: GET /api-docs/favicon-32x32.png 304 0.742 ms - -
+2021-08-10 01:25:25 debug: Auth Success /covid/country/name/India - GET - ::1
+2021-08-10 01:25:26 http: GET /covid/country/name/India 404 1182.226 ms - 64
+2021-08-10 01:25:45 http: GET /api-docs/favicon-32x32.png 304 0.688 ms - -
+2021-08-10 01:25:46 http: GET /api-docs/favicon-32x32.png 304 0.721 ms - -
+2021-08-10 01:25:48 debug: Auth Success /covid/country/name?country=India - GET - ::1
+2021-08-10 01:25:49 http: GET /covid/country/name?country=India 404 908.077 ms - 64
+2021-08-10 01:31:44 debug: Server started and running on port : 3000
+2021-08-10 01:31:53 debug: Server started and running on port : 3000
+2021-08-10 01:31:55 debug: Connection has been established successfully.
+2021-08-10 01:32:06 http: GET /api-docs/ 200 6.183 ms - 3104
+2021-08-10 01:32:06 http: GET /api-docs/swagger-ui-bundle.js 304 1.452 ms - -
+2021-08-10 01:32:06 http: GET /api-docs/swagger-ui-init.js 304 0.384 ms - -
+2021-08-10 01:32:06 http: GET /api-docs/swagger-ui-standalone-preset.js 304 5.239 ms - -
+2021-08-10 01:32:06 http: GET /api-docs/swagger-ui.css 200 11.892 ms - 143074
+2021-08-10 01:32:07 http: GET /api-docs/favicon-32x32.png 200 1.018 ms - 628
+2021-08-10 01:32:11 error: Auth failed /covid/country/name?country=India - GET - ::1 - /country/name
+2021-08-10 01:32:11 http: GET /covid/country/name?country=India 401 2.795 ms - 25
+2021-08-10 01:32:22 http: GET /api-docs/favicon-32x32.png 304 2.285 ms - -
+2021-08-10 01:32:23 http: GET /api-docs/favicon-32x32.png 304 0.963 ms - -
+2021-08-10 01:32:26 error: Auth failed /covid/country/name/India - GET - ::1 - /country/name/India
+2021-08-10 01:32:26 http: GET /covid/country/name/India 401 3.448 ms - 25
+2021-08-10 01:32:30 http: GET /api-docs/favicon-32x32.png 304 0.965 ms - -
+2021-08-10 01:32:38 http: POST /users/signin 200 1246.007 ms - 350
+2021-08-10 01:32:41 debug: Status Mail sent
+2021-08-10 01:32:47 http: GET /api-docs/favicon-32x32.png 304 1.718 ms - -
+2021-08-10 01:32:51 debug: Auth Success /covid/country/name/India - GET - ::1
+2021-08-10 01:32:53 http: GET /covid/country/name/India 404 1220.479 ms - 64
+2021-08-10 01:32:56 http: GET /api-docs/favicon-32x32.png 304 0.718 ms - -
+2021-08-10 01:32:58 debug: Auth Success /covid/country/name?country=India - GET - ::1
+2021-08-10 01:32:59 http: GET /covid/country/name?country=India 404 897.039 ms - 64
+2021-08-10 01:33:09 debug: Auth Success /covid/country/name?country=China - GET - ::1
+2021-08-10 01:33:10 http: GET /covid/country/name?country=China 404 903.316 ms - 64
+2021-08-10 01:33:22 http: GET /api-docs/favicon-32x32.png 304 0.737 ms - -
+2021-08-10 01:33:24 debug: Auth Success /demorequests - GET - ::1
+2021-08-10 01:33:24 debug: Auth Success /demorequests - GET - ::1
+2021-08-10 01:33:24 http: GET /demorequests 200 2.229 ms - 314
+2021-08-10 01:33:34 http: GET /api-docs/favicon-32x32.png 304 1.126 ms - -
+2021-08-10 01:33:36 http: GET /api-docs/favicon-32x32.png 304 1.153 ms - -
+2021-08-10 01:33:40 debug: Auth Success /demorequests - POST - ::1
+2021-08-10 01:33:40 http: POST /demorequests 200 2.503 ms - 593
+2021-08-10 01:33:43 http: GET /api-docs/favicon-32x32.png 304 0.718 ms - -
+2021-08-10 01:34:03 debug: Server started and running on port : 3000
+2021-08-10 01:34:05 debug: Connection has been established successfully.
+2021-08-10 01:34:06 debug: Auth Success /covid/country/name/India - GET - ::1
+2021-08-10 01:34:08 http: GET /covid/country/name/India 404 1263.693 ms - 64
+2021-08-10 01:34:12 debug: Server started and running on port : 3000
+2021-08-10 01:34:14 debug: Connection has been established successfully.
+2021-08-10 01:34:28 debug: Server started and running on port : 3000
+2021-08-10 01:34:29 debug: Auth Success /covid/country/name/India - GET - ::1
+2021-08-10 01:34:29 debug: Connection has been established successfully.
+2021-08-10 01:34:31 http: GET /covid/country/name/India 404 2644.682 ms - 64
+2021-08-10 01:34:43 debug: Server started and running on port : 3000
+2021-08-10 01:34:44 debug: Auth Success /covid/country/name/India - GET - ::1
+2021-08-10 01:34:44 debug: Connection has been established successfully.
+2021-08-10 01:34:45 http: GET /covid/country/name/India 404 1150.114 ms - 64
+2021-08-10 01:35:25 debug: Server started and running on port : 3000
+2021-08-10 01:35:26 debug: Connection has been established successfully.
+2021-08-10 01:35:28 debug: Server started and running on port : 3000
+2021-08-10 01:35:29 debug: Auth Success /covid/country/name/India - GET - ::1
+2021-08-10 01:35:30 debug: Connection has been established successfully.
+2021-08-10 01:35:30 http: GET /covid/country/name/India 404 1187.539 ms - 64
+2021-08-10 01:35:36 debug: Server started and running on port : 3000
+2021-08-10 01:35:37 debug: Auth Success /covid/country/name/India - GET - ::1
+2021-08-10 01:35:38 debug: Connection has been established successfully.
+2021-08-10 01:35:38 http: GET /covid/country/name/India 404 1200.951 ms - 64
+2021-08-10 01:35:40 debug: Auth Success /covid/country/name/India - GET - ::1
+2021-08-10 01:35:41 http: GET /covid/country/name/India 404 942.601 ms - 64
+2021-08-10 01:35:55 debug: Server started and running on port : 3000
+2021-08-10 01:35:57 debug: Connection has been established successfully.
+2021-08-10 01:35:57 debug: Auth Success /covid/country/name/India - GET - ::1
+2021-08-10 01:35:59 http: GET /covid/country/name/India 404 1213.586 ms - 64
+2021-08-10 01:36:30 debug: Server started and running on port : 3000
+2021-08-10 01:36:31 debug: Connection has been established successfully.
+2021-08-10 01:36:40 debug: Server started and running on port : 3000
+2021-08-10 01:36:41 debug: Auth Success /covid/country/name/India - GET - ::1
+2021-08-10 01:36:42 debug: Connection has been established successfully.
+2021-08-10 01:36:42 http: GET /covid/country/name/India 404 1244.107 ms - 64
+2021-08-10 01:36:58 debug: Server started and running on port : 3000
+2021-08-10 01:37:00 debug: Connection has been established successfully.
+2021-08-10 01:37:00 debug: Auth Success /covid/country/name/India - GET - ::1
+2021-08-10 01:37:01 http: GET /covid/country/name/India 404 1192.730 ms - 64
+2021-08-10 01:37:06 debug: Auth Success /covid/country/name/India - GET - ::1
+2021-08-10 01:37:07 http: GET /covid/country/name/India 404 900.076 ms - 64
+2021-08-10 01:37:28 debug: Server started and running on port : 3000
+2021-08-10 01:37:30 debug: Connection has been established successfully.
+2021-08-10 01:37:50 debug: Server started and running on port : 3000
+2021-08-10 01:37:52 debug: Auth Success /covid/country/name/India - GET - ::1
+2021-08-10 01:37:53 debug: Connection has been established successfully.
+2021-08-10 01:37:53 http: GET /covid/country/name/India 404 1279.834 ms - 64
+2021-08-10 01:37:58 debug: Auth Success /covid/country/name/India - GET - ::1
+2021-08-10 01:38:00 http: GET /covid/country/name/India 404 1940.777 ms - 64
+2021-08-10 01:38:34 debug: Auth Success /covid/country/name/India - GET - ::1
+2021-08-10 01:38:35 http: GET /covid/country/name/India 404 939.394 ms - 64
+2021-08-10 01:38:47 debug: Server started and running on port : 3000
+2021-08-10 01:38:47 debug: Auth Success /covid/country/name/India - GET - ::1
+2021-08-10 01:38:48 http: GET /covid/country/name/India 404 1187.816 ms - 64
+2021-08-10 01:38:48 debug: Connection has been established successfully.
+2021-08-10 01:38:50 debug: Auth Success /covid/country/name/India - GET - ::1
+2021-08-10 01:38:51 http: GET /covid/country/name/India 404 963.395 ms - 64
+2021-08-10 01:38:56 debug: Auth Success /covid/country/name/India - GET - ::1
+2021-08-10 01:38:57 http: GET /covid/country/name/India 404 979.400 ms - 64
+2021-08-10 01:39:01 debug: Auth Success /covid/country/name/India - GET - ::1
+2021-08-10 01:39:02 http: GET /covid/country/name/India 404 1013.385 ms - 64
+2021-08-10 01:39:11 debug: Server started and running on port : 3000
+2021-08-10 01:39:13 debug: Connection has been established successfully.
+2021-08-10 01:39:38 debug: Server started and running on port : 3000
+2021-08-10 01:39:40 debug: Connection has been established successfully.
+2021-08-10 01:39:43 debug: Auth Success /covid/country/name/India - GET - ::1
+2021-08-10 01:39:45 http: GET /covid/country/name/India 404 1154.593 ms - 64
+2021-08-10 01:39:54 debug: Server started and running on port : 3000
+2021-08-10 01:39:56 debug: Connection has been established successfully.
+2021-08-10 01:39:59 debug: Auth Success /covid/country/name/India - GET - ::1
+2021-08-10 01:40:00 http: GET /covid/country/name/India 404 1221.086 ms - 64
+2021-08-10 12:55:31 debug: Server started and running on port : 3000
+2021-08-10 12:55:33 debug: Connection has been established successfully.
+2021-08-10 13:50:02 error: Error message: Please visit https://sample-nodejs-rest-api.herokuapp.com/api-docs/ for API documentation,Error message: / - GET - ::1
+2021-08-10 13:50:02 http: GET / 400 4.248 ms - 103
+2021-08-10 13:50:02 error: Error message: Please visit https://sample-nodejs-rest-api.herokuapp.com/api-docs/ for API documentation,Error message: /favicon.ico - GET - ::1
+2021-08-10 13:50:02 http: GET /favicon.ico 400 0.803 ms - 103
+2021-08-10 13:50:08 http: GET /api-docs/ 200 4.301 ms - 3104
+2021-08-10 13:50:08 http: GET /api-docs/swagger-ui-init.js 200 0.587 ms - 22562
+2021-08-10 13:50:08 http: GET /api-docs/swagger-ui.css 200 38.975 ms - 143074
+2021-08-10 13:50:08 http: GET /api-docs/swagger-ui-bundle.js 200 11.722 ms - 1038857
+2021-08-10 13:50:08 http: GET /api-docs/swagger-ui-standalone-preset.js 200 217.403 ms - 329649
+2021-08-10 13:50:09 http: GET /api-docs/favicon-32x32.png 200 7.582 ms - 628
+2021-08-10 13:50:25 http: GET /api-docs/favicon-32x32.png 304 1.325 ms - -
+2021-08-10 13:50:31 http: POST /users/signin 200 1170.316 ms - 350
+2021-08-10 13:50:38 debug: Status Mail sent
+2021-08-10 13:50:45 http: GET /api-docs/favicon-32x32.png 304 0.825 ms - -
+2021-08-10 13:50:48 http: GET /api-docs/favicon-32x32.png 304 0.863 ms - -
+2021-08-10 13:50:50 debug: Auth Success /covid/country/name?country=India - GET - ::1
+2021-08-10 13:50:51 http: GET /covid/country/name?country=India 404 1628.658 ms - 64
+2021-08-10 13:51:11 debug: Server started and running on port : 3000
+2021-08-10 13:51:12 debug: Connection has been established successfully.
+2021-08-10 13:51:15 debug: Auth Success /covid/country/name?country=India - GET - ::1
+2021-08-10 13:51:16 http: GET /covid/country/name?country=India 404 1432.480 ms - 64
+2021-08-10 13:51:30 debug: Server started and running on port : 3000
+2021-08-10 13:51:32 debug: Connection has been established successfully.
+2021-08-10 13:51:36 http: GET /api-docs/favicon-32x32.png 304 4.386 ms - -
+2021-08-10 13:51:39 http: GET /api-docs/favicon-32x32.png 304 1.219 ms - -
+2021-08-10 13:51:43 debug: Auth Success /covid/country/name/India - GET - ::1
+2021-08-10 13:51:44 http: GET /covid/country/name/India 404 1711.994 ms - 64
+2021-08-10 13:51:51 debug: Server started and running on port : 3000
+2021-08-10 13:51:52 debug: Connection has been established successfully.
+2021-08-10 13:51:55 debug: Auth Success /covid/country/name/India - GET - ::1
+2021-08-10 13:51:57 http: GET /covid/country/name/India 404 1847.854 ms - 64
+2021-08-10 13:52:08 debug: Server started and running on port : 3000
+2021-08-10 13:52:10 debug: Connection has been established successfully.
+2021-08-10 13:52:13 debug: Auth Success /covid/country/name/India - GET - ::1
+2021-08-10 13:52:14 http: GET /covid/country/name/India 404 1421.053 ms - 64
+2021-08-10 13:52:23 debug: Server started and running on port : 3000
+2021-08-10 13:52:25 debug: Connection has been established successfully.
+2021-08-10 13:52:44 debug: Auth Success /covid/country/name/India - GET - ::1
+2021-08-10 13:52:45 http: GET /covid/country/name/India 404 1481.555 ms - 64
+2021-08-10 13:53:49 debug: Server started and running on port : 3000
+2021-08-10 13:53:51 debug: Connection has been established successfully.
+2021-08-10 13:54:26 debug: Server started and running on port : 3000
+2021-08-10 13:54:28 debug: Connection has been established successfully.
+2021-08-10 13:54:30 debug: Auth Success /covid/country/name/India - GET - ::1
+2021-08-10 13:54:31 http: GET /covid/country/name/India 404 1604.218 ms - 64
+2021-08-10 13:54:45 debug: Server started and running on port : 3000
+2021-08-10 13:54:46 debug: Connection has been established successfully.
+2021-08-10 13:54:49 debug: Auth Success /covid/country/name/India - GET - ::1
+2021-08-10 13:54:50 http: GET /covid/country/name/India 404 1427.445 ms - 64
+2021-08-10 13:55:37 debug: Server started and running on port : 3000
+2021-08-10 13:55:39 debug: Connection has been established successfully.
+2021-08-10 13:55:42 debug: Status Mail sent
+2021-08-10 13:56:27 debug: Server started and running on port : 3000
+2021-08-10 13:56:28 debug: Connection has been established successfully.
+2021-08-10 13:56:33 debug: Auth Success /covid/country/name/India - GET - ::1
+2021-08-10 13:56:35 http: GET /covid/country/name/India 404 1595.555 ms - 64
+2021-08-10 13:56:43 debug: Server started and running on port : 3000
+2021-08-10 13:56:44 debug: Connection has been established successfully.
+2021-08-10 13:56:44 debug: Auth Success /covid/country/name/India - GET - ::1
+2021-08-10 13:56:47 http: GET /covid/country/name/India 200 2537.357 ms - 133
+2021-08-10 13:57:28 debug: Server started and running on port : 3000
+2021-08-10 13:57:29 debug: Connection has been established successfully.
+2021-08-10 13:57:41 debug: Server started and running on port : 3000
+2021-08-10 13:57:43 debug: Server started and running on port : 3000
+2021-08-10 13:57:45 debug: Connection has been established successfully.
+2021-08-10 13:58:05 debug: Server started and running on port : 3000
+2021-08-10 13:58:07 debug: Connection has been established successfully.
+2021-08-10 13:58:34 debug: Server started and running on port : 3000
+2021-08-10 13:58:35 debug: Connection has been established successfully.
+2021-08-10 13:58:47 debug: Auth Success /covid/country/name/India - GET - ::1
+2021-08-10 13:58:48 http: GET /covid/country/name/India 304 1860.945 ms - -
+2021-08-10 13:58:51 error: Error while sending mail : Error: No recipients defined
+2021-08-10 13:59:34 debug: Server started and running on port : 3000
+2021-08-10 13:59:36 debug: Connection has been established successfully.
+2021-08-10 13:59:40 debug: Server started and running on port : 3000
+2021-08-10 13:59:42 debug: Connection has been established successfully.
+2021-08-10 13:59:44 debug: Server started and running on port : 3000
+2021-08-10 13:59:46 debug: Connection has been established successfully.
+2021-08-10 13:59:48 debug: Server started and running on port : 3000
+2021-08-10 13:59:50 debug: Connection has been established successfully.
+2021-08-10 13:59:57 debug: Server started and running on port : 3000
+2021-08-10 13:59:58 debug: Connection has been established successfully.
+2021-08-10 14:00:31 http: GET /api-docs/favicon-32x32.png 304 4.353 ms - -
+2021-08-10 14:02:15 debug: Server started and running on port : 3000
+2021-08-10 14:02:17 debug: Connection has been established successfully.
+2021-08-10 14:02:52 debug: Server started and running on port : 3000
+2021-08-10 14:02:54 debug: Connection has been established successfully.
+2021-08-10 14:03:05 debug: Server started and running on port : 3000
+2021-08-10 14:03:06 debug: Connection has been established successfully.
+2021-08-10 14:08:07 debug: Server started and running on port : 3000
+2021-08-10 14:08:09 debug: Connection has been established successfully.
+2021-08-10 14:08:23 http: GET /api-docs/favicon-32x32.png 304 4.604 ms - -
+2021-08-10 14:08:25 debug: Auth Success /covid/country/name?country=India - GET - ::1
+2021-08-10 14:08:26 http: GET /covid/country/name?country=India 200 1661.754 ms - 133
+2021-08-10 14:08:28 debug: Auth Success /covid/country/name?country=India - GET - ::1
+2021-08-10 14:08:29 http: GET /covid/country/name?country=India 304 1155.430 ms - -
+2021-08-10 14:08:30 debug: Auth Success /covid/country/name?country=India - GET - ::1
+2021-08-10 14:08:31 http: GET /covid/country/name?country=India 304 1169.627 ms - -
+2021-08-10 14:08:31 debug: Status Mail sent
+2021-08-10 14:08:32 http: GET /covid/country/name?country=India 429 0.818 ms - 42
+2021-08-10 14:08:35 debug: Status Mail sent
+2021-08-10 14:08:36 debug: Status Mail sent
+2021-08-10 14:10:00 debug: Server started and running on port : 3000
+2021-08-10 14:10:02 debug: Connection has been established successfully.
+2021-08-10 14:12:16 debug: Server started and running on port : 3000
+2021-08-10 14:12:17 debug: Connection has been established successfully.
+2021-08-10 14:12:20 debug: Auth Success /covid/country/name?country=India - GET - ::1
+2021-08-10 14:12:22 http: GET /covid/country/name?country=India 200 1677.593 ms - 133
+2021-08-10 14:12:23 debug: Auth Success /covid/country/name?country=India - GET - ::1
+2021-08-10 14:12:24 http: GET /covid/country/name?country=India 304 1134.771 ms - -
+2021-08-10 14:12:25 http: GET /covid/country/name?country=India 429 0.857 ms - 74
+2021-08-10 14:12:27 debug: Status Mail sent
+2021-08-10 14:12:29 debug: Status Mail sent
+2021-08-10 14:13:49 debug: Server started and running on port : 3000
+2021-08-10 14:13:51 debug: Connection has been established successfully.
+2021-08-10 14:13:55 debug: Auth Success /covid/country/name?country=India - GET - ::1
+2021-08-10 14:13:56 http: GET /covid/country/name?country=India 200 1625.019 ms - 133
+2021-08-10 14:13:58 debug: Auth Success /covid/country/name?country=India - GET - ::1
+2021-08-10 14:13:59 http: GET /covid/country/name?country=India 304 1139.023 ms - -
+2021-08-10 14:14:00 http: GET /covid/country/name?country=India 429 0.819 ms - 88
+2021-08-10 14:14:01 debug: Status Mail sent
+2021-08-10 14:14:04 debug: Status Mail sent
+2021-08-10 14:14:27 debug: Server started and running on port : 3000
+2021-08-10 14:14:28 debug: Connection has been established successfully.
+2021-08-10 14:16:02 debug: Server started and running on port : 3000
+2021-08-10 14:16:02 debug: Auth Success /covid/country/name?country=India - GET - ::1
+2021-08-10 14:16:03 debug: Connection has been established successfully.
+2021-08-10 14:16:04 http: GET /covid/country/name?country=India 200 1654.637 ms - 133
+2021-08-10 14:16:05 debug: Auth Success /covid/country/name?country=India - GET - ::1
+2021-08-10 14:16:07 http: GET /covid/country/name?country=India 304 1245.589 ms - -
+2021-08-10 14:16:07 http: GET /covid/country/name?country=India 429 0.627 ms - 94
+2021-08-10 14:16:08 debug: Status Mail sent
+2021-08-10 14:16:11 debug: Status Mail sent
+2021-08-10 14:17:59 debug: Server started and running on port : 3000
+2021-08-10 14:18:00 debug: Connection has been established successfully.
+2021-08-10 14:23:25 debug: Server started and running on port : 3000
+2021-08-10 14:23:27 debug: Connection has been established successfully.
+2021-08-10 14:25:21 debug: Server started and running on port : 3000
+2021-08-10 14:25:23 debug: Connection has been established successfully.
+2021-08-10 14:28:35 debug: Server started and running on port : 3000
+2021-08-10 14:28:37 debug: Connection has been established successfully.
+2021-08-10 14:29:32 debug: Server started and running on port : 3000
+2021-08-10 14:29:33 debug: Connection has been established successfully.
+2021-08-10 14:30:23 http: GET /api-docs/favicon-32x32.png 304 3.851 ms - -
+2021-08-10 14:30:24 http: GET /api-docs/favicon-32x32.png 304 1.347 ms - -
+2021-08-10 14:30:25 http: GET /api-docs/favicon-32x32.png 304 0.765 ms - -
+2021-08-10 14:30:34 debug: Auth Success /covid/country/name?country=India - GET - ::1
+2021-08-10 14:30:35 http: GET /covid/country/name?country=India 200 1444.716 ms - 133
+2021-08-10 14:30:36 debug: Auth Success /covid/country/name?country=India - GET - ::1
+2021-08-10 14:30:37 http: GET /covid/country/name?country=India 304 908.312 ms - -
+2021-08-10 14:30:38 http: GET /covid/country/name?country=India 429 0.755 ms - 94
+2021-08-10 14:30:41 debug: Status Mail sent
+2021-08-10 14:30:42 debug: Status Mail sent
+2021-08-10 14:30:47 http: GET /api-docs/favicon-32x32.png 304 0.840 ms - -
+2021-08-10 17:26:27 debug: Server started and running on port : 3000
+2021-08-10 17:26:29 error: Error message: Please visit https://sample-nodejs-rest-api.herokuapp.com/api-docs/ for API documentation,Error message: / - GET - ::1
+2021-08-10 17:26:29 http: GET / 400 10.637 ms - 103
+2021-08-10 17:26:29 error: Error message: Please visit https://sample-nodejs-rest-api.herokuapp.com/api-docs/ for API documentation,Error message: /favicon.ico - GET - ::1
+2021-08-10 17:26:29 http: GET /favicon.ico 400 0.802 ms - 103
+2021-08-10 17:26:29 debug: Connection has been established successfully.
+2021-08-10 17:26:35 http: GET /api-docs/ 200 3.978 ms - 3104
+2021-08-10 17:26:35 http: GET /api-docs/swagger-ui-init.js 200 0.644 ms - 22562
+2021-08-10 17:26:35 http: GET /api-docs/swagger-ui.css 200 16.978 ms - 143074
+2021-08-10 17:26:36 http: GET /api-docs/swagger-ui-standalone-preset.js 200 19.505 ms - 329649
+2021-08-10 17:26:36 http: GET /api-docs/swagger-ui-bundle.js 200 14.711 ms - 1038857
+2021-08-10 17:26:36 http: GET /api-docs/favicon-32x32.png 200 0.922 ms - 628
+2021-08-10 17:26:56 error: Error message: Please visit https://sample-nodejs-rest-api.herokuapp.com/api-docs/ for API documentation,Error message: / - GET - ::1
+2021-08-10 17:26:56 http: GET / 400 0.577 ms - 103
+2021-08-10 17:26:56 error: Error message: Please visit https://sample-nodejs-rest-api.herokuapp.com/api-docs/ for API documentation,Error message: /favicon.ico - GET - ::1
+2021-08-10 17:26:56 http: GET /favicon.ico 400 3.134 ms - 103
+2021-08-10 17:32:06 error: Error message: Please visit https://sample-nodejs-rest-api.herokuapp.com/api-docs/ for API documentation,Error message: / - GET - ::1
+2021-08-10 17:32:06 http: GET / 400 1.300 ms - 103
+2021-08-10 17:32:06 error: Error message: Please visit https://sample-nodejs-rest-api.herokuapp.com/api-docs/ for API documentation,Error message: /favicon.ico - GET - ::1
+2021-08-10 17:32:06 http: GET /favicon.ico 400 0.646 ms - 103
+2021-08-10 17:32:15 http: GET /api-docs/ 200 1.756 ms - 3104
+2021-08-10 17:32:15 http: GET /api-docs/swagger-ui.css 200 1.867 ms - 143074
+2021-08-10 17:32:15 http: GET /api-docs/swagger-ui-init.js 200 0.617 ms - 22562
+2021-08-10 17:32:16 http: GET /api-docs/swagger-ui-standalone-preset.js 200 1.023 ms - 329649
+2021-08-10 17:32:16 http: GET /api-docs/swagger-ui-bundle.js 200 0.948 ms - 1038857
+2021-08-10 17:32:16 http: GET /api-docs/favicon-32x32.png 200 0.999 ms - 628
+2021-08-10 17:32:18 http: GET /api-docs/favicon-32x32.png 304 1.454 ms - -
+2021-08-10 17:32:25 http: POST /users/signin 200 1228.134 ms - 350
+2021-08-10 17:32:31 debug: Status Mail sent
+2021-08-10 17:32:37 http: GET /api-docs/favicon-32x32.png 304 0.747 ms - -
+2021-08-10 17:32:41 http: GET /api-docs/favicon-32x32.png 304 0.706 ms - -
+2021-08-10 17:32:50 debug: Auth Success /covid/country/name?country=India - GET - ::1
+2021-08-10 17:32:52 http: GET /covid/country/name?country=India 200 1463.406 ms - 133
+2021-08-10 17:32:54 debug: Auth Success /covid/country/name?country=India - GET - ::1
+2021-08-10 17:32:55 http: GET /covid/country/name?country=India 304 951.454 ms - -
+2021-08-10 17:32:56 debug: Status Mail sent
+2021-08-10 17:32:56 debug: Auth Success /covid/country/name?country=India - GET - ::1
+2021-08-10 17:32:57 http: GET /covid/country/name?country=India 304 954.464 ms - -
+2021-08-10 17:32:59 debug: Auth Success /covid/country/name?country=India - GET - ::1
+2021-08-10 17:33:00 debug: Status Mail sent
+2021-08-10 17:33:00 http: GET /covid/country/name?country=India 304 931.557 ms - -
+2021-08-10 17:33:01 http: GET /covid/country/name?country=India 429 0.650 ms - 94
+2021-08-10 17:33:02 debug: Status Mail sent
+2021-08-10 17:33:05 debug: Status Mail sent
+2021-08-10 19:04:33 debug: Server started and running on port : 3000
+2021-08-10 19:04:35 debug: Connection has been established successfully.
+2021-08-10 19:04:43 error: Error message: Please visit https://sample-nodejs-rest-api.herokuapp.com/api-docs/ for API documentation,Error message: / - GET - ::1
+2021-08-10 19:04:43 http: GET / 400 3.567 ms - 103
+2021-08-10 19:04:43 error: Error message: Please visit https://sample-nodejs-rest-api.herokuapp.com/api-docs/ for API documentation,Error message: /favicon.ico - GET - ::1
+2021-08-10 19:04:43 http: GET /favicon.ico 400 0.687 ms - 103
+2021-08-10 19:04:51 http: GET /api-docs/ 200 4.317 ms - 3104
+2021-08-10 19:04:51 http: GET /api-docs/swagger-ui.css 200 7.349 ms - 143074
+2021-08-10 19:04:51 http: GET /api-docs/swagger-ui-init.js 200 0.450 ms - 22562
+2021-08-10 19:04:51 http: GET /api-docs/swagger-ui-standalone-preset.js 200 32.885 ms - 329649
+2021-08-10 19:04:51 http: GET /api-docs/swagger-ui-bundle.js 200 6.611 ms - 1038857
+2021-08-10 19:04:51 http: GET /api-docs/favicon-32x32.png 200 1.302 ms - 628
+2021-08-10 19:04:55 http: GET /api-docs/favicon-32x32.png 304 3.850 ms - -
+2021-08-10 19:05:00 http: POST /users/signin 404 1024.984 ms - 28
+2021-08-10 19:05:04 http: POST /users/signin 200 565.967 ms - 350
+2021-08-10 19:05:10 debug: Status Mail sent
+2021-08-10 19:05:16 http: GET /api-docs/favicon-32x32.png 304 1.738 ms - -
+2021-08-10 19:05:18 http: GET /api-docs/favicon-32x32.png 304 0.702 ms - -
+2021-08-10 19:05:19 http: GET /api-docs/favicon-32x32.png 304 0.856 ms - -
+2021-08-10 19:05:38 debug: Auth Success /covid/country/name?country=India - GET - ::1
+2021-08-10 19:05:39 http: GET /covid/country/name?country=India 200 1290.316 ms - 133
+2021-08-10 19:05:42 debug: Auth Success /covid/country/name?country=India - GET - ::1
+2021-08-10 19:05:43 http: GET /covid/country/name?country=India 304 949.024 ms - -
+2021-08-10 19:05:44 debug: Status Mail sent
+2021-08-10 19:05:46 http: GET /covid/country/name?country=India 429 0.753 ms - 94
+2021-08-10 19:05:48 debug: Status Mail sent
+2021-08-10 19:06:00 http: GET /covid/country/name?country=India 429 0.583 ms - 94
+2021-08-10 19:06:03 debug: Auth Success /covid/country/name?country=India - GET - ::1
+2021-08-10 19:06:04 http: GET /covid/country/name?country=India 200 910.303 ms - 133
+2021-08-10 19:06:08 debug: Status Mail sent
+2021-08-10 23:47:57 debug: Server started and running on port : 3000
+2021-08-10 23:47:58 debug: Connection has been established successfully.
