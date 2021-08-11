@@ -6,7 +6,9 @@
   "scripts": {
     "start": "cross-env NODE_ENV=dev nodemon server.js",
     "prod": "cross-env NODE_ENV=prod nodemon server.js",
-    "test": "cross-env NODE_ENV=test jest --watchAll --detectOpenHandles"
+    "test": "cross-env NODE_ENV=test jest --watchAll --detectOpenHandles",
+    "lint": "eslint ./",
+    "lint:fix": "eslint ./ --fix"
   },
   "jest": {
     "setupFilesAfterEnv": [
@@ -44,7 +46,14 @@
   },
   "devDependencies": {
     "cross-env": "^7.0.3",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.24.0",
+    "eslint-plugin-jest": "^24.4.0",
+    "eslint-plugin-prettier": "^3.4.0",
     "jest": "^27.0.6",
+    "prettier": "^2.3.2",
     "supertest": "^6.1.4"
   }
 }

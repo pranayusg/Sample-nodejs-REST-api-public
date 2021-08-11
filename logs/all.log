@@ -497,3 +497,38 @@
 2021-08-10 19:06:08 debug: Status Mail sent
 2021-08-10 23:47:57 debug: Server started and running on port : 3000
 2021-08-10 23:47:58 debug: Connection has been established successfully.
+2021-08-11 14:02:24 debug: Server started and running on port : 3000
+2021-08-11 14:02:26 debug: Connection has been established successfully.
+2021-08-11 14:04:34 debug: Server started and running on port : 3000
+2021-08-11 14:04:35 debug: Connection has been established successfully.
+2021-08-12 01:28:24 debug: Server started and running on port : 3000
+2021-08-12 01:28:26 debug: Connection has been established successfully.
+2021-08-12 01:28:26 error: Error message: Please visit https://sample-nodejs-rest-api.herokuapp.com/api-docs/ for API documentation,Error message: / - GET - ::1
+2021-08-12 01:28:26 http: GET / 400 3.950 ms - 103
+2021-08-12 01:28:26 error: Error message: Please visit https://sample-nodejs-rest-api.herokuapp.com/api-docs/ for API documentation,Error message: /favicon.ico - GET - ::1
+2021-08-12 01:28:26 http: GET /favicon.ico 400 0.717 ms - 103
+2021-08-12 01:28:33 http: GET /api-docs/ 200 3.891 ms - 3104
+2021-08-12 01:28:33 http: GET /api-docs/swagger-ui-init.js 200 0.343 ms - 22562
+2021-08-12 01:28:33 http: GET /api-docs/swagger-ui.css 200 77.422 ms - 143074
+2021-08-12 01:28:33 http: GET /api-docs/swagger-ui-bundle.js 200 10.334 ms - 1038857
+2021-08-12 01:28:33 http: GET /api-docs/swagger-ui-standalone-preset.js 200 240.481 ms - 329649
+2021-08-12 01:28:34 http: GET /api-docs/favicon-32x32.png 200 23.272 ms - 628
+2021-08-12 01:28:35 http: GET /api-docs/favicon-32x32.png 304 1.481 ms - -
+2021-08-12 01:29:09 http: POST /users/signin 200 1306.525 ms - 350
+2021-08-12 01:29:12 debug: Status Mail sent
+2021-08-12 01:29:16 debug: Server started and running on port : 3000
+2021-08-12 01:29:18 debug: Connection has been established successfully.
+2021-08-12 01:29:19 http: POST /users/signin 200 656.800 ms - 350
+2021-08-12 01:29:21 http: POST /users/signin 200 585.208 ms - 350
+2021-08-12 01:29:22 debug: Status Mail sent
+2021-08-12 01:35:27 debug: Server started and running on port : 3000
+2021-08-12 01:35:29 debug: Connection has been established successfully.
+2021-08-12 01:35:35 http: POST /users/signin 200 679.099 ms - 350
+2021-08-12 01:35:38 debug: Status Mail sent
+2021-08-12 01:35:53 debug: Server started and running on port : 3000
+2021-08-12 01:35:54 debug: Connection has been established successfully.
+2021-08-12 01:35:56 http: POST /users/signin 200 614.992 ms - 350
+2021-08-12 01:36:00 info: [object Object]
+2021-08-12 01:36:00 debug: Status Mail sent
+2021-08-12 01:36:34 debug: Server started and running on port : 3000
+2021-08-12 01:36:35 debug: Connection has been established successfully.

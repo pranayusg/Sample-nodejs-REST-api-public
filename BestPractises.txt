@@ -9,6 +9,7 @@ eslint
 
 compression npm
 Error handling next
+sent files through public folder images
 
 https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/Introduction
 
@@ -24,7 +25,7 @@ https://github.com/hagopj13/node-express-boilerplate
 https://dev.to/juliest88/how-to-build-rest-api-with-nodejs-express-and-mysql-31jk
 
 https://github.com/borisding/avenue-express
-https://levelup.gitconnected.com/building-an-express-api-with-sequelize-cli-and-unit-testing-882c6875ed59
+
 https://github.com/rafaelcalhau/boilerplate-nodejs-mysql/blob/master/package.json
 
 Build API
@@ -48,6 +49,13 @@ https://github.com/winstonjs/winston-mongodb/issues/162
 
 Request rate limiter in express and redis
 https://www.section.io/engineering-education/nodejs-rate-limiting/
+
+ESLINT and Preetier
+https://sourcelevel.io/blog/how-to-setup-eslint-and-prettier-on-node
+
+Default formatter
+Format on save 
+
 
 https://dev.iazi.ch/app/marketatlas/layout/price#7.3/46.52/8.099
 
