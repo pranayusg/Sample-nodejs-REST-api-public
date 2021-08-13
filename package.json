@@ -4,9 +4,9 @@
   "description": "Project to build Rest API using nodejs",
   "main": "index.js",
   "scripts": {
-    "start": "cross-env NODE_ENV=dev nodemon server.js",
-    "prod": "cross-env NODE_ENV=prod nodemon server.js",
-    "test": "cross-env NODE_ENV=test jest --watchAll --detectOpenHandles",
+    "start": "node server.js",
+    "dev": "cross-env NODE_ENV=dev nodemon server.js",
+    "test": "jest --watchAll --detectOpenHandles",
     "lint": "eslint ./",
     "lint:fix": "eslint ./ --fix"
   },
@@ -15,6 +15,9 @@
       "<rootDir>/tests/setup.js"
     ]
   },
+  "engines": {
+    "node": "14.17.3"
+  },
   "author": "Pranay Usgaonkar",
   "license": "ISC",
   "dependencies": {
@@ -22,6 +25,7 @@
     "bcrypt": "^5.0.0",
     "body-parser": "^1.19.0",
     "cheerio": "^1.0.0-rc.3",
+    "compression": "^1.7.4",
     "cors": "^2.8.5",
     "cors-anywhere": "^0.4.3",
     "dotenv": "^10.0.0",
@@ -29,6 +33,7 @@
     "express-rate-limit": "^5.3.0",
     "express-validator": "^6.12.1",
     "fs": "0.0.1-security",
+    "helmet": "^4.6.0",
     "http": "0.0.1-security",
     "iconv-lite": "^0.6.3",
     "jsonwebtoken": "^8.5.1",

@@ -1,12 +1,12 @@
+require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
+const helmet = require('helmet');
+const compression = require('compression');
 const swaggerUi = require('swagger-ui-express');
 const swaggerDocument = require('./src/docs/swagger.json');
 const logger = require('./src/lib/logger');
 const morganMiddleware = require('./src/middlewares/morgan.middleware');
-
-require('dotenv').config();
-
 const demorequests = require('./src/routes/demoRequests.route');
 const covidRoutes = require('./src/routes/covid.route');
 const usersRoutes = require('./src/routes/users.route');
@@ -18,6 +18,8 @@ app.set('trust proxy', 1);
 app.use(morganMiddleware);
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
+app.use(helmet());
+app.use(compression());
 
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 app.use('/demorequests', demorequests);

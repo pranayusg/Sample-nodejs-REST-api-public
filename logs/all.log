@@ -532,3 +532,30 @@
 2021-08-12 01:36:00 debug: Status Mail sent
 2021-08-12 01:36:34 debug: Server started and running on port : 3000
 2021-08-12 01:36:35 debug: Connection has been established successfully.
+2021-08-12 23:03:00 debug: Server started and running on port : 3000
+2021-08-12 23:03:01 debug: Connection has been established successfully.
+2021-08-12 23:03:44 error: Error message: Please visit https://sample-nodejs-rest-api.herokuapp.com/api-docs/ for API documentation,Error message: / - GET - ::1
+2021-08-12 23:03:44 http: GET / 400 6.131 ms - 103
+2021-08-12 23:03:44 error: Error message: Please visit https://sample-nodejs-rest-api.herokuapp.com/api-docs/ for API documentation,Error message: /favicon.ico - GET - ::1
+2021-08-12 23:03:44 http: GET /favicon.ico 400 4.651 ms - 103
+2021-08-12 23:03:54 http: GET /api-docs/ 200 36.257 ms - -
+2021-08-12 23:03:54 http: GET /api-docs/swagger-ui-init.js 200 0.912 ms - -
+2021-08-12 23:03:54 http: GET /api-docs/swagger-ui.css 200 57.839 ms - -
+2021-08-12 23:03:54 http: GET /api-docs/swagger-ui-bundle.js 200 14.353 ms - -
+2021-08-12 23:03:54 http: GET /api-docs/swagger-ui-standalone-preset.js 200 220.891 ms - -
+2021-08-12 23:03:55 http: GET /api-docs/favicon-32x32.png 200 5.664 ms - 628
+2021-08-12 23:03:57 http: GET /api-docs/favicon-32x32.png 304 1.354 ms - -
+2021-08-12 23:04:05 http: POST /users/signin 200 1161.704 ms - 350
+2021-08-12 23:04:12 debug: Status Mail sent
+2021-08-12 23:04:22 http: GET /api-docs/favicon-32x32.png 304 0.832 ms - -
+2021-08-12 23:04:25 http: GET /api-docs/favicon-32x32.png 304 0.856 ms - -
+2021-08-12 23:04:27 debug: Auth Success /covid/country/name?country=India - GET - ::1
+2021-08-12 23:04:30 http: GET /covid/country/name?country=India 200 2772.506 ms - 133
+2021-08-12 23:04:35 debug: Status Mail sent
+2021-08-12 23:04:41 debug: Auth Success /covid/country/name?country=India - GET - ::1
+2021-08-12 23:04:42 http: GET /covid/country/name?country=India 304 1141.904 ms - -
+2021-08-12 23:04:45 debug: Status Mail sent
+2021-08-12 23:04:46 debug: Auth Success /covid/country/name?country=India - GET - ::1
+2021-08-12 23:04:47 http: GET /covid/country/name?country=India 304 1162.416 ms - -
+2021-08-12 23:04:50 http: GET /covid/country/name?country=India 429 1.586 ms - 94
+2021-08-12 23:04:54 debug: Status Mail sent
