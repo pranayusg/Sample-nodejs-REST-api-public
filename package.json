@@ -6,6 +6,7 @@
   "scripts": {
     "start": "node server.js",
     "dev": "cross-env NODE_ENV=dev nodemon server.js",
+    "prod": "cross-env NODE_ENV=prod nodemon server.js",
     "test": "jest --watchAll --detectOpenHandles",
     "lint": "eslint ./",
     "lint:fix": "eslint ./ --fix"
