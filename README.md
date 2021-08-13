@@ -35,8 +35,8 @@ This project starter should be working as expected with the following minimal ve
 
 ```bash
 # cloning git repository into `my-project` folder
-git clone --depth=1 https://github.com/borisding/avenue-express.git my-project
-
+git clone https://github.com/pranayusg/Sample-nodejs-REST-api-public.git
+  
 # install project dependencies
 cd Sample-nodejs-REST-api-public && npm install
 ```
@@ -51,17 +51,8 @@ npm run dev
 
 **Production**
 
-Copy `.env.development` to `./config/dotenv` folder as `.env` for production usage:
-
-```bash
-cp config/dotenv/.env.development config/dotenv/.env
-```
-
-Change environment variables in `.env` to serve your app. Avoid using the same port for both development and production.
-
-```bash
-# build for production ready and start server
-npm run build && npm start
+  ```bash
+npm run prod
 ```
 
 To run tests:
@@ -73,4 +64,9 @@ npm test
 ```
 
 **[Back to top](#table-of-contents)**  
+  
+## Project Structure
+
+Below is a overview of project structure
+  
 
