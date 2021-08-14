@@ -160,11 +160,11 @@ Below is a overview of project structure
   
 ## Other features
   
-- Express-validator is used to test the input to API
+- `Express-validator` is used to test the input to API
   
   ![image](https://user-images.githubusercontent.com/66126225/129442179-729e1bd7-1cad-4d3c-8a15-388abb45075b.png)
 
-- Express-rate-limit is used to limit the number of requests to API. DB can be used to store number of requests within a window for better rate limiting
+- `Express-rate-limit` is used to limit the number of requests to API. DB can be used to store number of requests within a window for better rate limiting
   
   ![image](https://user-images.githubusercontent.com/66126225/129442342-3d88a708-fd73-49c6-b3e1-2237e3175ba8.png)
   ![image](https://user-images.githubusercontent.com/66126225/129453534-5d98df1d-849b-4852-8186-31189d8704b0.png)
