@@ -55,10 +55,12 @@ npm run dev
 npm run prod
 ```
 
-To run tests:
+
 
 **Test**
 
+  To run tests:
+  
 ```bash
 npm test
 ```
@@ -82,7 +84,7 @@ Below is a overview of project structure
 
 **Environment Variables**
   
-`dotenv` and 'cross-env` package is used for managing environment variables. The .env is environment sepecific and is loaded based on the defined `process.env.NODE_ENV` value  
+`dotenv` and `cross-env` package is used for managing environment variables. The .env is environment sepecific and is loaded based on the defined `process.env.NODE_ENV` value  
   
 ![image](https://user-images.githubusercontent.com/66126225/129401161-db0402a2-1ee6-43f4-b61e-32fd3968834c.png)
    
@@ -108,6 +110,18 @@ Below is a overview of project structure
 - There are several pre-defined lint rules in respective individual configuration files.
 
   ![image](https://user-images.githubusercontent.com/66126225/129402516-a9c2aab4-cd7a-486c-a236-21ebc727ba0b.png)
+  
+  To run linter 
+  
+  ```bash
+  npm lint
+  ```
+  
+  To fix auto linting errors 
+  
+  ```bash
+  npm lint:fix
+  ```
  
 **[Back to top](#table-of-contents)**  
   
@@ -151,7 +165,7 @@ Below is a overview of project structure
 - Express-rate-limit is used to limit the number of requests to API. DB can be used to store number of requests within a window for better rate limiting
   
   ![image](https://user-images.githubusercontent.com/66126225/129442342-3d88a708-fd73-49c6-b3e1-2237e3175ba8.png)
-  ![image](https://user-images.githubusercontent.com/66126225/129442319-67607e9b-d922-4046-a3b6-0511cf2845c8.png)
+  ![image](https://user-images.githubusercontent.com/66126225/129453534-5d98df1d-849b-4852-8186-31189d8704b0.png)
 
 - `nodemailer` is used to sent status mails
 
