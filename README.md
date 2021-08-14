@@ -69,7 +69,7 @@ npm test
 
 Below is a overview of project structure
 
-  ![image](https://user-images.githubusercontent.com/66126225/129399953-fe42694b-44ef-473b-805c-fe7958262124.png)
+  ![image](https://user-images.githubusercontent.com/66126225/129441838-7ff6149e-2d84-4ed3-be40-1f49da4e6872.png)
   
 
 **src folder** 
@@ -82,15 +82,24 @@ Below is a overview of project structure
 
 **Environment Variables**
   
-`dotenv` package is used for managing environment variables. The .env is environment sepecific and is loaded based on the defined `process.env.NODE_ENV` value  
+`dotenv` and 'cross-env` package is used for managing environment variables. The .env is environment sepecific and is loaded based on the defined `process.env.NODE_ENV` value  
   
 ![image](https://user-images.githubusercontent.com/66126225/129401161-db0402a2-1ee6-43f4-b61e-32fd3968834c.png)
+   
   
 ## ORM  
  `Sequelize` ORM is used to do operations with `MYSQL`  
  Connections to DB and all operations related to specific tables is done in models folder
 
   ![image](https://user-images.githubusercontent.com/66126225/129401730-5b35a609-9d34-4bf8-8f1d-6cf4c5a317d8.png)
+  
+## Authorization and Authentication
+  `bcrypt` and `jsonwebtoken` are used for user authorization and authentication
+  
+   Check below files
+  
+  ![image](https://user-images.githubusercontent.com/66126225/129442998-bfe71474-ec6c-4a82-8eb4-dfdbd37fbe07.png)
+
 
 ## Lint Checks and Formatting
 
@@ -106,7 +115,7 @@ Below is a overview of project structure
 
 - This project uses `winston` and `morgan ` loggers for logging exception error,info and http request logs. Please check out the winston logger file (`./src/lib/logger.js`) and     morgan logger to work with winston (`./src/middlewares/morgan.middleware.js.js`)
 
-- All log files will go into `./storage/logs` folder.
+- All log files will go into `./logs` folder.
 
   ![image](https://user-images.githubusercontent.com/66126225/129403317-3d3acb09-a9a4-4987-9872-21b1384465c0.png)
 
@@ -115,10 +124,38 @@ Below is a overview of project structure
   
 ## Testing
 
-- All test files reside in `./tests` folder. [Jest](https://jestjs.io/) framework is used for running tests. All Jest related config can be seen under `jest.config.js` file.
+- All test files reside in `./tests` folder. [Jest](https://jestjs.io/) framework and `supertest` is used for running tests. `jest.setup.js` file is used to load some               configurations before test are run
 
-- Besides, `vue-jest` and `jest-serializer-vue` are also included for testing `.vue` components.
+  ![image](https://user-images.githubusercontent.com/66126225/129441923-6da29f46-2f09-4e4d-b8ff-1b5d6efae447.png)
+  
+- `Integration tests` are written in this project to test some endpoints which depend on db response
+-  There are no `Unit tests`  in this project since this is a sample project
+-  My `Unit Tests` can be found here
 
 **[Back to top](#table-of-contents)**
   
+## API Docs
+  
+- [Swagger](https://swagger.io/) is used to design and document the API
+- Check out my [API Docs](https://app.swaggerhub.com/apis/pranayusg/nodejs_restapi/0.1) 
+  
+  ![image](https://user-images.githubusercontent.com/66126225/129442584-ae65c4ad-a07c-406d-9fe2-6e815874974f.png)
+
+  
+## Other features
+  
+- Express-validator is used to test the input to API
+  
+  ![image](https://user-images.githubusercontent.com/66126225/129442179-729e1bd7-1cad-4d3c-8a15-388abb45075b.png)
+
+- Express-rate-limit is used to limit the number of requests to API. DB can be used to store number of requests within a window for better rate limiting
+  
+  ![image](https://user-images.githubusercontent.com/66126225/129442342-3d88a708-fd73-49c6-b3e1-2237e3175ba8.png)
+  ![image](https://user-images.githubusercontent.com/66126225/129442319-67607e9b-d922-4046-a3b6-0511cf2845c8.png)
+
+- `nodemailer` is used to sent status mails
+
+   ![image](https://user-images.githubusercontent.com/66126225/129442453-7952dfe6-bba9-4a84-ba41-9d3cc414937e.png)
+
+
   
