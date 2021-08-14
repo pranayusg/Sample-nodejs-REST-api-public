@@ -5,7 +5,7 @@ const userRateLimiter = rateLimit({
   max: 5,
   message: {
     message:
-      'Too many requests, rate limiter activated ,please try again later after 30 secs.',
+      'Too many requests, rate limiter activated ,please try again later after 30 mins.',
   },
 });
 
