@@ -1,7 +1,7 @@
 {
   "openapi": "3.0.1",
   "info": {
-    "title": "Sample nodejs REST api",
+    "title": "Sample nodejs REST API",
     "description": "This api is build to understand various types of requests,parameters and status codes used in a REST api.Along with this covid route is present which provides data based on country.Tech used:- nodejs,express,mysql",
     "version": "0.1",
     "contact": {
