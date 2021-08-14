@@ -13,7 +13,7 @@
   },
   "jest": {
     "setupFilesAfterEnv": [
-      "<rootDir>/tests/setup.js"
+      "<rootDir>/jest.setup.js"
     ]
   },
   "engines": {
