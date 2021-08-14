@@ -144,8 +144,8 @@ Below is a overview of project structure
   
 - `Integration tests` are written in this project to test some endpoints which depend on db response
 -  There are no `Unit tests`  in this project since this is a sample project
--  My `Unit Tests` can be found here
-
+-  My `Unit Tests` can be found [here](https://github.com/pranayusg/Nodejs-Concepts/tree/main/tests) 
+ 
 **[Back to top](#table-of-contents)**
   
 ## API Docs
