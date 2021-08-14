@@ -13,6 +13,10 @@ This project is build to understand various concepts used in a Nodejs REST api  
 - [Lint Checks and Formatting](#lint-checks-and-formatting)
 - [Logging](#logging)
 - [Testing](#Testing)
+- [API Docs](#api-docs)  
+- [Other features](#other-features)    
+  
+  
 
 
 ## Requirement
@@ -114,7 +118,7 @@ Below is a overview of project structure
   npm lint
   ```
   
-  To fix auto linting errors 
+  To auto fix linting errors 
   
   ```bash
   npm lint:fix
