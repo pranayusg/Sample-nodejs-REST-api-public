@@ -7,16 +7,13 @@ This project is build to understand various concepts used in a Nodejs REST api  
 
 - [Requirement](#requirement)
 - [Quick Start](#quick-start)
-- [Project Structure](#project-structure) / [Configuration](#configuration) / [CLI and ORM](#cli-and-orm)
-- [Controllers](#controllers) / [Models](#models) / [Views](#views)
-- [Frontend Assets](#frontend-assets)
-- [Session Management](#session-management)
-- [Nodemon and Webpack](#nodemon-and-webpack)
+- [Project Structure](#project-structure)  
+- [Configuration](#configuration) 
+- [ORM](#orm)
 - [Lint Checks and Formatting](#lint-checks-and-formatting)
 - [Logging](#logging)
 - [Testing](#Testing)
-- [Changelog](#changelog)
-- [License](#license)
+
 
 ## Requirement
 
