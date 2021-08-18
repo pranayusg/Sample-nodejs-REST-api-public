@@ -26,19 +26,24 @@ app.use('/demorequests', demorequests);
 app.use('/covid', covidRoutes);
 app.use('/users', usersRoutes);
 
-app.use((req, res, next) => {
-  const error = new Error(
-    'Please visit https://sample-nodejs-rest-api.herokuapp.com/api-docs/ for API documentation'
+app.get('/', (req, res) => {
+  res.send(
+    `<h1>Welcome to my Sample Nodejs Rest API</h1> 
+    <a href="http://localhost:3000/api-docs/">Visit API DOCS</a>`
   );
-  next(error);
 });
+
+/* app.use((req, res, next) => {
+  const error = new Error('Something went wrong');
+  next(error);
+}); */
 
 app.use((error, req, res, next) => {
   res.status(500).json({
     message: error.message,
   });
   logger.error(
-    `Error message: ${error.message},Error message: ${req.originalUrl} - ${req.method} - ${req.ip}`
+    `Error message: ${error.message},Req details: ${req.originalUrl} - ${req.method} - ${req.ip}`
   );
 });
 
