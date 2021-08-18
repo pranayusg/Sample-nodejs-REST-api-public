@@ -34,7 +34,7 @@ app.use((req, res, next) => {
 });
 
 app.use((error, req, res, next) => {
-  res.status(400).json({
+  res.status(500).json({
     message: error.message,
   });
   logger.error(
