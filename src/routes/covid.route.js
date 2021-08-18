@@ -5,16 +5,16 @@ const covidControllers = require('../controllers/covid.controller');
 
 const router = express.Router();
 
+router.all('*', checkAuth);
+
 router.get(
   '/country/name',
   rateLimiter.covidRateLimiter,
-  checkAuth,
   covidControllers.countryInQuery
 );
 router.get(
   '/country/name/:name',
   rateLimiter.covidRateLimiter,
-  checkAuth,
   covidControllers.countryInPath
 );
 
