@@ -1,0 +1,232 @@
+{
+	"info": {
+		"_postman_id": "67e00d51-6bb8-4df6-9a78-e96b371a7af5",
+		"name": "BuildRestApi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"mail\":\"bill@gmail.com\",\r\n  \"password\":\"gates\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/users/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Signin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"mail\":\"bill@gmail.com\",\r\n  \"password\":\"gates\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/users/signin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"signin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Decode token with headers authorization",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJtYWlsIjoiYmlsbEBnbWFpbC5jb20iLCJpZCI6NiwiaWF0IjoxNjI0NzM5MzgwLCJleHAiOjE2MjQ3NDI5ODAsImF1ZCI6IlJlc3ROb2RlQVBJIiwiaXNzIjoicHJhbmF5dXNnIn0.wquJZ8YUndJUNJfqxqPPewFJP6nS8oJl-DWeTN-Dg1s",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/users/decodetoken",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"decodetoken"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Decode token with authorization",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJtYWlsIjoiYmlsbEBnbWFpbC5jb20iLCJpZCI6NiwiaWF0IjoxNjI0NzM5MzgwLCJleHAiOjE2MjQ3NDI5ODAsImF1ZCI6IlJlc3ROb2RlQVBJIiwiaXNzIjoicHJhbmF5dXNnIn0.wquJZ8YUndJUNJfqxqPPewFJP6nS8oJl-DWeTN-Dg1s",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJtYWlsIjoiYmlsbEBnbWFpbC5jb20iLCJpZCI6NiwiaWF0IjoxNjI0NzM5MzgwLCJleHAiOjE2MjQ3NDI5ODAsImF1ZCI6IlJlc3ROb2RlQVBJIiwiaXNzIjoicHJhbmF5dXNnIn0.wquJZ8YUndJUNJfqxqPPewFJP6nS8oJl-DWeTN-Dg1s",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/users/decodetoken",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"decodetoken"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Demo requests-Path Parameter",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJtYWlsIjoiYmlsbEBnbWFpbC5jb20iLCJpZCI6NiwiaWF0IjoxNjI0NzM5MzgwLCJleHAiOjE2MjQ3NDI5ODAsImF1ZCI6IlJlc3ROb2RlQVBJIiwiaXNzIjoicHJhbmF5dXNnIn0.wquJZ8YUndJUNJfqxqPPewFJP6nS8oJl-DWeTN-Dg1s",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/demorequests/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"demorequests",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Demo requests-Patch request",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJtYWlsIjoiYmlsbEBnbWFpbC5jb20iLCJpZCI6NiwiaWF0IjoxNjI0NzM5MzgwLCJleHAiOjE2MjQ3NDI5ODAsImF1ZCI6IlJlc3ROb2RlQVBJIiwiaXNzIjoicHJhbmF5dXNnIn0.wquJZ8YUndJUNJfqxqPPewFJP6nS8oJl-DWeTN-Dg1s",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/demorequests",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"demorequests"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Demo requests-Query params",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJtYWlsIjoiYmlsbEBnbWFpbC5jb20iLCJpZCI6NiwiaWF0IjoxNjI0NzM5MzgwLCJleHAiOjE2MjQ3NDI5ODAsImF1ZCI6IlJlc3ROb2RlQVBJIiwiaXNzIjoicHJhbmF5dXNnIn0.wquJZ8YUndJUNJfqxqPPewFJP6nS8oJl-DWeTN-Dg1s",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/demorequests/queryparameters?name=Pranay&description=Thanks for using my API",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"demorequests",
+						"queryparameters"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Pranay"
+						},
+						{
+							"key": "description",
+							"value": "Thanks for using my API"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
